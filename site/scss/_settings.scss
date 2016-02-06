@@ -567,22 +567,50 @@ html, body {
   position: relative;
 }
 
-.lds-logo {
-  height: 6.7rem;
-  width: 12.4rem;
+.logo {
+  height: 5.5rem;
+  width: 12rem;
   position: absolute;
   left: 7.2%;
   background-color: white;
+  padding: 1.1rem;
+}
+
+.logo-small-text {
+  color: black;
+  text-align: center;
+  margin: 0;
+  font-family: palatino;
+  font-size: 0.7rem;
+    
+}
+  
+.logo-large-text {
+  color: black;
+  text-align: center;
+  margin: 0;
+  font-family: palatino;
+  font-size: 1rem;
+    
 }
 
 @media screen and (max-height: 545px) and (max-width: 321px) {
   
-  .lds-logo {
+  .logo {
     height: 100%;
     width: 6rem !important;
     position: absolute;
     left: 8% !important;
     background-color: white;
+    padding: 0.3rem !important;
+  }
+  
+  .logo-small-text {
+    font-size: 7px !important;
+  }
+  
+  .logo-large-text {
+    font-size: 10px !important;
   }
 }
 
@@ -651,7 +679,7 @@ html, body {
   width: 50.2%;
   top: -0.2%;
   left: -0.2%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/photo-1453396450673-3fe83d2db2c4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/photo-by-Drew-Hays.jpg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -730,12 +758,21 @@ html, body {
     position: relative;
   }
   
-  .lds-logo {
-    height: rem-calc(65.996);
-    width: rem-calc(132);
+  .logo {
+    height: 4rem;
+    width: 8.5rem;
     position: absolute;
     left: 8%;
     background-color: white;
+    padding: 0.75rem;
+  }
+  
+  .logo-small-text {
+    font-size: 0.5rem;
+  }
+  
+  .logo-large-text {
+    font-size: 0.75rem;
   }
 
   .soc-med {
@@ -791,7 +828,7 @@ html, body {
     width: 50.2%;
     top: -0.2%;
     left: -0.2%;
-    background-image: url("../img/photo-1453396450673-3fe83d2db2c4.jpg");
+    background-image: url("../img/photo-by-Drew-Hays.jpg");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -885,12 +922,21 @@ html, body {
     position: relative;
   }
   
-  .lds-logo {
+  .logo {
     height: 100%;
     width: 7.7rem;
     position: absolute;
     left: 3%;
     background-color: white;
+    padding: 0.7rem;
+  }
+  
+  .logo-small-text {
+    font-size: 0.35rem;
+  }
+  
+  .logo-large-text {
+    font-size: 0.6rem;
   }
 
   .soc-med {
@@ -947,7 +993,7 @@ html, body {
     width: 50%;
     top: -0.3%;
     left: -0.4%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/photo-1453396450673-3fe83d2db2c4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/photo-by-Drew-Hays.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1033,10 +1079,10 @@ html, body {
 
 .pg-2-bacrnd-img {
   @extend .pgs-2-5-inner-container;
-  background-image: url(../img/P2_Background.png);
-  background-size: rem-calc(1440) 107%;
-  background-position: center;
-  max-width: 1440px;
+  background-image: url(../img/photo-by-Dustin-Scarpitti.jpg);
+  background-size: cover;
+  background-position: top right;
+//  max-width: 1440px;
 }
 
 .pg-2-txt-img-wrap {
@@ -1098,9 +1144,9 @@ html, body {
     background-repeat: no-repeat;
     position: relative;
     border: 1.5em solid white; 
-    background-image: url(../img/P2_Background.png);
-    background-size: rem-calc(1023px) 107%;
-    background-position: center;
+    background-image: url(../img/photo-by-Dustin-Scarpitti.jpg);
+    background-size: cover;
+    background-position: top right;
   }
   
   .pg-2-txt-img-wrap {
@@ -1157,9 +1203,9 @@ html, body {
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
-    background-image: url(../img/P-2-mobile.png);
-    background-size: 106% 108%;
-    background-position: 52% 43%;
+    background-image: url(../img/photo-by-Dustin-Scarpitti.jpg);
+    background-size: cover;
+    background-position: top right;
   }
   
   .side-nav-container.pg-2-side-nav-container-mobile {
@@ -1486,10 +1532,10 @@ html, body {
 
 .pg-3-bacrnd-img {
   @extend .pgs-2-5-inner-container;
-  background-image: url(../img/P3_Background.png);
-  background-size: rem-calc(1440) 108%;
-  background-position: center;
-  max-width: 1440px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(../img/photo-by-Brooke-Cagle.jpg);
+  background-size: cover;
+  background-position: top center;
+//  max-width: 1440px;
 }
 
 .pg-3-txt-img-wrap {
@@ -1547,9 +1593,9 @@ html, body {
     background-repeat: no-repeat;
     position: relative;
     border: 1.5em solid white; 
-    background-image: url(../img/P3_Background.png);
-    background-size: rem-calc(1023px) 108%;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(../img/photo-by-Brooke-Cagle.jpg);
+    background-size: cover;
+    background-position: top center;
   }
   
   .pg-3-txt-img-wrap {
@@ -1602,9 +1648,9 @@ html, body {
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/P3_Background.png);
-    background-size: 240% 94.2%;
-    background-position: 91% 0%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(../img/photo-by-Brooke-Cagle.jpg);
+    background-size: cover;
+    background-position: top center;
   }
   
   .side-nav-container.pg-3-side-nav-container-mobile {
@@ -1667,9 +1713,10 @@ html, body {
 
 .pg-4-bacrnd-img {
   @extend .pgs-2-5-inner-container;
-  background-image: url(../img/P4_Background.png);
-  background-size: rem-calc(1440) 102%;
-  max-width: 1440px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25)), url(../img/photo-by-Elijah-Hail.jpg);
+  background-size: cover;
+  background-position: center right;
+//  max-width: 1440px;
 }
 
 .pg-4-txt-img-wrap {
@@ -1728,9 +1775,9 @@ html, body {
     background-repeat: no-repeat;
     position: relative;
     border: 1.5em solid white; 
-    background-image: url(../img/P4_Background.png);
-    background-size: rem-calc(1023px) 102%;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25)), url(../img/photo-by-Elijah-Hail.jpg);
+    background-size: cover;
+    background-position: center right;
   }
   
   .pg-4-txt-img-wrap {
@@ -1783,9 +1830,9 @@ html, body {
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/P4_Background.png);
-    background-size: 235% 94.2%;
-    background-position: 71% 0%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25)), url(../img/photo-by-Elijah-Hail.jpg);
+    background-size: cover;
+    background-position: center right;
   }
   
   .side-nav-container.pg-4-side-nav-container-mobile {
@@ -1848,10 +1895,10 @@ html, body {
 
 .pg-5-bacrnd-img {
   @extend .pgs-2-5-inner-container;
-  background-image: url(../img/P5_Background.png);
-  background-size: rem-calc(1440) 105%;
-  background-position: 0% 100%;
-  max-width: 1440px;
+  background-image: url(../img/photo-by-Julia-Caesar.jpg);
+  background-size: cover;
+  background-position: center center;
+//  max-width: 1440px;
 }
 
 .pg-5-txt-img-wrap {
@@ -1945,9 +1992,9 @@ html, body {
     background-repeat: no-repeat;
     position: relative;
     border: 1.5em solid white; 
-    background-image: url(../img/P5_Background.png);
-    background-size: rem-calc(1023px) 100%;
-    background-position: center;
+    background-image: url(../img/photo-by-Julia-Caesar.jpg);
+    background-size: cover;
+    background-position: center center;
   }
   
   .pg-5-txt-img-wrap {
@@ -2007,9 +2054,9 @@ html, body {
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
-    background-image: url(../img/P-5-mobile.png);
-    background-size: 100% 100%;
-    background-position: 0% 0%;
+    background-image: url(../img/photo-by-Julia-Caesar.jpg);
+    background-size: cover;
+    background-position: center center;
   }
   
   .side-nav-container.pg-5-side-nav-container-mobile {
@@ -2089,12 +2136,12 @@ html, body {
 .pg-6-bacrnd-img {
   height: 100%;
   width: 100%;
-  max-width: 1440px;
+//  max-width: 1440px;
   position: relative;
-  background-image: url(../img/P6_Background.png);
+  background-image: url(../img/photo-by-Greg-Rakozy.jpg);
   background-repeat: no-repeat;
-  background-size: rem-calc(1440) 100%;
-  background-position: top center;
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .pg-6-text-wrap {
@@ -2132,8 +2179,10 @@ html, body {
 
 .pg-6-txt-highlight {
   font-size: rem-calc(19.5);
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
+  text-shadow: 0.05rem 0.05rem darkslateblue
+               -0.05rem -0.05rem darkslateblue;
   background: none;
   color: #FBB03B;
 }
@@ -2222,9 +2271,9 @@ html, body {
     width: 100%;
     background-repeat: no-repeat;
     position: relative; 
-    background-image: url(../img/P6_Background.png);
-    background-size: rem-calc(1023px) 100%;
-    background-position: center;
+    background-image: url(../img/photo-by-Greg-Rakozy.jpg);
+    background-size: cover;
+    background-position: bottom center;
   }
   
   .pg-6-text-wrap {
@@ -2346,9 +2395,10 @@ html, body {
     height: 100%;
     width: 100%;
     position: relative;
-    background-image: url(../img/P-6-mobile.png);
+    background-image: url(../img/photo-by-Greg-Rakozy.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: bottom center;
   }
   
   .pg-6-text-wrap {
