@@ -1,0 +1,3571 @@
+//  Foundation for Sites Settings
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Breakpoints
+//   3. The Grid
+//   4. Base Typography
+//   5. Typography Helpers
+//   6. Abide
+//   7. Accordion
+//   8. Accordion Menu
+//   9. Badge
+//  10. Breadcrumbs
+//  11. Button
+//  12. Button Group
+//  13. Callout
+//  14. Close Button
+//  15. Drilldown
+//  16. Dropdown
+//  17. Dropdown Menu
+//  18. Flex Video
+//  19. Forms
+//  20. Label
+//  21. Media Object
+//  22. Menu
+//  23. Off-canvas
+//  24. Orbit
+//  25. Pagination
+//  26. Progress Bar
+//  27. Reveal
+//  28. Slider
+//  29. Switch
+//  30. Table
+//  31. Tabs
+//  32. Thumbnail
+//  33. Title Bar
+//  34. Tooltip
+//  35. Top Bar
+
+@import 'util/util';
+
+// 1. Global
+// ---------
+
+$global-width: rem-calc(1200);
+$global-font-size: 100%;
+$global-lineheight: 1.5;
+$primary-color: #2199e8;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+$body-background: $white;
+$body-font-color: $black;
+$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-antialiased: true;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 0;
+$global-text-direction: ltr;
+$rem-base: 16px;
+
+// 2. Breakpoints
+// --------------
+
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+$breakpoint-classes: (small medium large);
+
+// 3. The Grid
+// -----------
+
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-gutter: 30px;
+$grid-column-align-edge: true;
+$block-grid-max: 8;
+
+// 4. Base Typography
+// ------------------
+
+//$header-font-family: $body-font-family;
+//$header-font-weight: $global-weight-normal;
+//$header-font-style: normal;
+//$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$header-sizes: (
+  small: (
+    'h1': 24,
+    'h2': 20,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 16,
+  ),
+  medium: (
+    'h1': 48,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+  ),
+);
+$header-color: inherit;
+$header-lineheight: 1.4;
+$header-margin-bottom: 0.5rem;
+$header-text-rendering: optimizeLegibility;
+$small-font-size: 80%;
+//$header-small-font-color: $medium-gray;
+$paragraph-lineheight: 1.6;
+//$paragraph-margin-bottom: 1rem;
+$paragraph-text-rendering: optimizeLegibility;
+//$code-color: $black;
+//$code-font-family: $font-family-monospace;
+//$code-font-weight: $global-weight-normal;
+//$code-background: $light-gray;
+//$code-border: 1px solid $medium-gray;
+//$code-padding: rem-calc(2 5 1);
+//$anchor-color: $primary-color;
+//$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+//$anchor-text-decoration: none;
+//$anchor-text-decoration-hover: none;
+//$hr-width: $global-width;
+//$hr-border: 1px solid $medium-gray;
+//$hr-margin: rem-calc(20) auto;
+//$list-lineheight: $paragraph-lineheight;
+//$list-margin-bottom: $paragraph-margin-bottom;
+//$list-style-type: disc;
+//$list-style-position: outside;
+//$list-side-margin: 1.25rem;
+//$list-nested-side-margin: 1.25rem;
+//$defnlist-margin-bottom: 1rem;
+//$defnlist-term-weight: $global-weight-bold;
+//$defnlist-term-margin-bottom: 0.3rem;
+//$blockquote-color: $dark-gray;
+//$blockquote-padding: rem-calc(9 20 0 19);
+//$blockquote-border: 1px solid $medium-gray;
+//$cite-font-size: rem-calc(13);
+//$cite-color: $dark-gray;
+//$keystroke-font: $font-family-monospace;
+//$keystroke-color: $black;
+//$keystroke-background: $light-gray;
+//$keystroke-padding: rem-calc(2 4 0);
+//$keystroke-radius: $global-radius;
+//$abbr-underline: 1px dotted $black;
+
+// 5. Typography Helpers
+// ---------------------
+
+//$lead-font-size: $global-font-size * 1.25;
+//$lead-lineheight: 1.6;
+//$subheader-lineheight: 1.4;
+//$subheader-color: $dark-gray;
+//$subheader-font-weight: $global-weight-normal;
+//$subheader-margin-top: 0.2rem;
+//$subheader-margin-bottom: 0.5rem;
+//$stat-font-size: 2.5rem;
+
+// 6. Abide
+// --------
+
+//$abide-inputs: true;
+//$abide-labels: true;
+//$input-background-invalid: $alert-color;
+//$form-label-color-invalid: $alert-color;
+//$input-error-color: $alert-color;
+//$input-error-font-size: rem-calc(12);
+//$input-error-font-weight: $global-weight-bold;
+
+// 7. Accordion
+// ------------
+
+//$accordion-background: $white;
+//$accordion-plusminus: true;
+//$accordion-item-color: foreground($accordion-background, $primary-color);
+//$accordion-item-background-hover: $light-gray;
+//$accordion-item-padding: 1.25rem 1rem;
+//$accordion-content-background: $white;
+//$accordion-content-border: 1px solid $light-gray;
+//$accordion-content-color: foreground($accordion-background, $primary-color);
+//$accordion-content-padding: 1rem;
+
+// 8. Accordion Menu
+// -----------------
+
+//$accordionmenu-arrows: true;
+
+// 9. Badge
+// --------
+
+//$badge-background: $primary-color;
+//$badge-color: foreground($badge-background);
+//$badge-padding: 0.3em;
+//$badge-minwidth: 2.1em;
+//$badge-font-size: 0.6rem;
+
+// 10. Breadcrumbs
+// ---------------
+
+//$breadcrumbs-margin: 0 0 $global-margin 0;
+//$breadcrumbs-item-font-size: rem-calc(11);
+//$breadcrumbs-item-color: $primary-color;
+//$breadcrumbs-item-color-current: $black;
+//$breadcrumbs-item-color-disabled: $medium-gray;
+//$breadcrumbs-item-margin: 0.75rem;
+//$breadcrumbs-item-uppercase: true;
+//$breadcrumbs-item-slash: true;
+
+// 11. Button
+// ----------
+
+$button-padding: 0.85em 1em;
+$button-margin: 0 0 $global-margin 0;
+$button-fill: solid;
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: #fff;
+$button-color-alt: #000;
+$button-radius: $global-radius;
+$button-sizes: (
+ tiny: 0.6rem,
+ small: 0.75rem,
+ default: 0.9rem,
+ large: 1.25rem,
+);
+$button-opacity-disabled: 0.25;
+
+// 12. Button Group
+// ----------------
+
+$buttongroup-margin: 1rem;
+$buttongroup-spacing: 1px;
+$buttongroup-child-selector: '.button';
+$buttongroup-expand-max: 6;
+
+// 13. Callout
+// -----------
+
+//$callout-background: $white;
+//$callout-background-fade: 85%;
+//$callout-border: 1px solid rgba($black, 0.25);
+//$callout-margin: 0 0 1rem 0;
+//$callout-padding: 1rem;
+//$callout-font-color: $body-font-color;
+//$callout-font-color-alt: $body-background;
+//$callout-radius: $global-radius;
+//$callout-link-tint: 30%;
+
+// 14. Close Button
+// ----------------
+
+//$closebutton-position: right top;
+//$closebutton-offset-horizontal: 1rem;
+//$closebutton-offset-vertical: 0.5rem;
+//$closebutton-size: 2em;
+//$closebutton-lineheight: 1;
+//$closebutton-color: $dark-gray;
+//$closebutton-color-hover: $black;
+
+// 15. Drilldown
+// -------------
+
+//$drilldown-transition: transform 0.15s linear;
+//$drilldown-arrows: true;
+//$drilldown-background: $white;
+
+// 16. Dropdown
+// ------------
+
+//$dropdown-padding: 1rem;
+//$dropdown-border: 1px solid $medium-gray;
+//$dropdown-font-size: 16rem;
+//$dropdown-width: 300px;
+//$dropdown-radius: $global-radius;
+//$dropdown-sizes: (
+//  tiny: 100px,
+//  small: 200px,
+//  large: 400px,
+//);
+
+// 17. Dropdown Menu
+// -----------------
+
+//$dropdownmenu-arrows: true;
+//$dropdownmenu-min-width: 200px;
+//$dropdownmenu-background: $white;
+//$dropdownmenu-border: 1px solid $medium-gray;
+
+// 18. Flex Video
+// --------------
+
+$flexvideo-padding-top: rem-calc(25);
+$flexvideo-margin-bottom: rem-calc(16);
+$flexvideo-ratio: 4 by 3;
+$flexvideo-ratio-widescreen: 16 by 9;
+
+// 19. Forms
+// ---------
+
+//$fieldset-border: 1px solid $medium-gray;
+//$fieldset-padding: rem-calc(20);
+//$fieldset-margin: rem-calc(18 0);
+//$legend-padding: rem-calc(0 3);
+//$form-spacing: rem-calc(16);
+//$helptext-color: #333;
+//$helptext-font-size: rem-calc(13);
+//$helptext-font-style: italic;
+//$input-prefix-color: $black;
+//$input-prefix-background: $light-gray;
+//$input-prefix-border: 1px solid $medium-gray;
+//$input-prefix-padding: 1rem;
+//$form-label-color: $black;
+//$form-label-font-size: rem-calc(14);
+//$form-label-font-weight: $global-weight-normal;
+//$form-label-line-height: 1.8;
+//$select-background: #fafafa;
+//$select-triangle-color: #333;
+//$select-radius: $global-radius;
+//$input-color: $black;
+//$input-font-family: inherit;
+//$input-font-size: rem-calc(16);
+//$input-background: $white;
+//$input-background-focus: $white;
+//$input-background-disabled: $light-gray;
+//$input-border: 1px solid $medium-gray;
+//$input-border-focus: 1px solid $dark-gray;
+//$input-shadow: inset 0 1px 2px rgba($black, 0.1);
+//$input-shadow-focus: 0 0 5px $medium-gray;
+//$input-cursor-disabled: default;
+//$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+//$input-number-spinners: true;
+//$input-radius: $global-radius;
+
+// 20. Label
+// ---------
+
+//$label-background: $primary-color;
+//$label-color: foreground($label-background);
+//$label-font-size: 0.8rem;
+//$label-padding: 0.33333rem 0.5rem;
+//$label-radius: $global-radius;
+
+// 21. Media Object
+// ----------------
+
+//$mediaobject-margin-bottom: $global-margin;
+//$mediaobject-section-padding: $global-padding;
+//$mediaobject-image-width-stacked: 100%;
+
+// 22. Menu
+// --------
+
+//$menu-margin: 0;
+//$menu-margin-nested: 1rem;
+//$menu-item-padding: 0.7rem 1rem;
+//$menu-icon-spacing: 0.25rem;
+//$menu-expand-max: 6;
+
+// 23. Off-canvas
+// --------------
+
+//$offcanvas-size: 250px;
+//$offcanvas-background: $light-gray;
+//$offcanvas-zindex: -1;
+//$offcanvas-transition-length: 0.5s;
+//$offcanvas-transition-timing: ease;
+//$offcanvas-fixed-reveal: true;
+//$offcanvas-exit-background: rgba($white, 0.25);
+//$maincontent-class: 'off-canvas-content';
+//$maincontent-shadow: 0 0 10px rgba($black, 0.5);
+
+// 24. Orbit
+// ---------
+
+//$orbit-bullet-background: $medium-gray;
+//$orbit-bullet-background-active: $dark-gray;
+//$orbit-bullet-diameter: 1.2rem;
+//$orbit-bullet-margin: 0.1rem;
+//$orbit-bullet-margin-top: 0.8rem;
+//$orbit-bullet-margin-bottom: 0.8rem;
+//$orbit-caption-background: rgba($black, 0.5);
+//$orbit-caption-padding: 1rem;
+//$orbit-control-background-hover: rgba($black, 0.5);
+//$orbit-control-padding: 1rem;
+//$orbit-control-zindex: 10;
+
+// 25. Pagination
+// --------------
+
+//$pagination-font-size: rem-calc(14);
+//$pagination-margin-bottom: $global-margin;
+//$pagination-item-color: $black;
+//$pagination-item-padding: rem-calc(3 10);
+//$pagination-item-spacing: rem-calc(1);
+//$pagination-radius: $global-radius;
+//$pagination-item-background-hover: $light-gray;
+//$pagination-item-background-current: $primary-color;
+//$pagination-item-color-current: foreground($pagination-item-background-current);
+//$pagination-item-color-disabled: $medium-gray;
+//$pagination-ellipsis-color: $black;
+//$pagination-mobile-items: false;
+//$pagination-arrows: true;
+
+// 26. Progress Bar
+// ----------------
+
+//$progress-height: 1rem;
+//$progress-background: $medium-gray;
+//$progress-margin-bottom: $global-margin;
+//$progress-meter-background: $primary-color;
+//$progress-radius: $global-radius;
+
+// 27. Reveal
+// ----------
+
+//$reveal-background: $white;
+//$reveal-width: 600px;
+//$reveal-max-width: $global-width;
+//$reveal-offset: rem-calc(100);
+//$reveal-padding: $global-padding;
+//$reveal-border: 1px solid $medium-gray;
+//$reveal-radius: $global-radius;
+//$reveal-zindex: 1005;
+//$reveal-overlay-background: rgba($black, 0.45);
+
+// 28. Slider
+// ----------
+
+//$slider-height: 0.5rem;
+//$slider-width-vertical: $slider-height;
+//$slider-background: $light-gray;
+//$slider-fill-background: $medium-gray;
+//$slider-handle-height: 1.4rem;
+//$slider-handle-width: 1.4rem;
+//$slider-handle-background: $primary-color;
+//$slider-opacity-disabled: 0.25;
+//$slider-radius: $global-radius;
+//$slider-transition: all 0.2s ease-in-out;
+
+// 29. Switch
+// ----------
+
+//$switch-background: $medium-gray;
+//$switch-background-active: $primary-color;
+//$switch-height: 2rem;
+//$switch-height-tiny: 1.5rem;
+//$switch-height-small: 1.75rem;
+//$switch-height-large: 2.5rem;
+//$switch-radius: $global-radius;
+//$switch-margin: $global-margin;
+//$switch-paddle-background: $white;
+//$switch-paddle-offset: 0.25rem;
+//$switch-paddle-radius: $global-radius;
+//$switch-paddle-transition: all 0.25s ease-out;
+
+// 30. Table
+// ---------
+
+//$table-background: $white;
+//$table-color-scale: 5%;
+//$table-border: 1px solid smart-scale($table-background, $table-color-scale);
+//$table-padding: rem-calc(8 10 10);
+//$table-hover-scale: 2%;
+//$table-row-hover: darken($table-background, $table-hover-scale);
+//$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
+//$table-striped-background: smart-scale($table-background, $table-color-scale);
+//$table-stripe: even;
+//$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+//$table-foot-background: smart-scale($table-background, $table-color-scale);
+//$table-head-font-color: $body-font-color;
+//$show-header-for-stacked: false;
+
+// 31. Tabs
+// --------
+
+//$tab-margin: 0;
+//$tab-background: $white;
+//$tab-background-active: $light-gray;
+//$tab-border: $light-gray;
+//$tab-item-color: foreground($tab-background, $primary-color);
+//$tab-item-background-hover: $white;
+//$tab-item-padding: 1.25rem 1.5rem;
+//$tab-expand-max: 6;
+//$tab-content-background: $white;
+//$tab-content-border: $light-gray;
+//$tab-content-color: foreground($tab-background, $primary-color);
+//$tab-content-padding: 1rem;
+
+// 32. Thumbnail
+// -------------
+
+//$thumbnail-border: solid 4px $white;
+//$thumbnail-margin-bottom: $global-margin;
+//$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+//$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+//$thumbnail-transition: box-shadow 200ms ease-out;
+//$thumbnail-radius: $global-radius;
+
+// 33. Title Bar
+// -------------
+
+//$titlebar-background: $black;
+//$titlebar-color: $white;
+//$titlebar-padding: 0.5rem;
+//$titlebar-text-font-weight: bold;
+//$titlebar-icon-color: $white;
+//$titlebar-icon-color-hover: $medium-gray;
+//$titlebar-icon-spacing: 0.25rem;
+
+// 34. Tooltip
+// -----------
+
+//$tooltip-background-color: $black;
+//$tooltip-color: $white;
+//$tooltip-padding: 0.75rem;
+//$tooltip-font-size: $small-font-size;
+//$tooltip-pip-width: 0.75rem;
+//$tooltip-pip-height: $tooltip-pip-width * 0.866;
+//$tooltip-pip-offset: 1.25rem;
+//$tooltip-radius: $global-radius;
+
+// 35. Top Bar
+// -----------
+
+//$topbar-padding: 0.5rem;
+//$topbar-background: $light-gray;
+//$topbar-link-color: $primary-color;
+//$topbar-input-width: 200px;
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.scroll-main{
+  height: 100vh;
+}
+
+//Page One
+// -------
+
+.pg-1-container {
+  height: 100vh;
+  width: 100vw; 
+//  max-width: 1440px;
+}
+
+.header-pg-1 {
+  height: 12%;
+  width: 100%;
+  background: none;
+  color: white;
+  position: relative;
+}
+
+.lds-logo {
+  height: 6.7rem;
+  width: 12.4rem;
+  position: absolute;
+  left: 7.2%;
+  background-color: white;
+}
+
+@media screen and (max-height: 545px) and (max-width: 321px) {
+  
+  .lds-logo {
+    height: 100%;
+    width: 6rem !important;
+    position: absolute;
+    left: 8% !important;
+    background-color: white;
+  }
+}
+
+.soc-med {
+  position: absolute;
+  top: 20%;
+  right: 0.9%;
+}
+
+.share {
+  font-family: 'Open Sans', sans-serif;
+  font-size: rem-calc(20.5);
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  margin-right: 0.75rem;
+  position: relative;
+  bottom: 0.5rem;
+  color: white;
+  text-shadow: 1.25px 1.25px 0 grey, 
+               1px 0px 0 grey,
+               0px -1px 0 grey,
+               0px -1px 0 grey,
+               0px 0px 0 grey;
+}
+
+.social-icons {
+  font-size: rem-calc(48);
+  color: white;
+  text-shadow: 1.25px 1.25px 0 grey, 
+               1px 0px 0 grey,
+               0px -1px 0 grey,
+               0px -1px 0 grey,
+               0px 0px 0 grey;
+  margin-right: 0.2rem;
+}
+
+.pg-1-side-nav {
+  height: auto;
+  font-size: rem-calc(12);
+  width: 5%;
+  list-style-type: none;
+  display: inline-block;
+  position: absolute;
+  top: 41%;
+  color: white;
+  z-index: 23;
+}
+
+.pg-1-pics {
+  height: 100vh;
+  width: 100vw;
+}
+
+.pg-1-pic {
+  @extend .pg-1-pics;
+  width: 50%;
+  margin: 0.1rem;
+  position: absolute;
+  top: -8.5%;
+  z-index: -1000;
+}
+
+.pg-1-pic-l {
+  @extend .pg-1-pic;
+  height: 100%;
+  width: 50.2%;
+  top: -0.2%;
+  left: -0.2%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/photo-1453396450673-3fe83d2db2c4.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.pg-1-pic-r {
+  @extend .pg-1-pic;
+  height: 100%;
+  width: 50.2%;
+  top: -0.2%;
+  right: -0.2%;
+  background-image: url("../img/photo-by-Greg-Raines.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.pg-1-text-container {
+  height: 92%;
+  width: 97%;
+  line-height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 5rem;
+  right: 0rem; 
+}
+
+.pg-1-text-wrap {
+  min-width: 38rem;
+  display: inline-block;
+  position: absolute;
+  top: 54.7%;
+  left: 48.5%;
+  transform: translate(-50%, -50%);
+  line-height: normal;
+  color: white;
+}
+
+.pg-1-title {
+  height: 11rem;
+  width: 17.5rem;
+  margin-right: 3%;
+  margin-bottom: 8%;
+}
+
+.pg-1-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  background: none;
+  margin-bottom: 5%;
+}
+
+
+.pg-1-text-2 {
+  @extend .pg-1-text;
+  font-weight: bolder;
+  margin-bottom: 6%;
+}
+
+.pg-1-down-arrow {
+  height: 3rem;
+  width: 3rem;
+}
+
+@media #{$medium-only} {
+  
+  .header-pg-1 {
+    height: 9%;
+    width: 100%;
+    background: none;
+    color: white;
+    position: relative;
+  }
+  
+  .lds-logo {
+    height: rem-calc(65.996);
+    width: rem-calc(132);
+    position: absolute;
+    left: 8%;
+    background-color: white;
+  }
+
+  .soc-med {
+    margin-right: 0rem;
+    position: absolute;
+    top: 27%;
+    right: 1.4%;
+  }
+  
+  .share {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(14);
+    font-weight: bolder;
+    margin-right: 0.5rem;
+    position: relative;
+    bottom: 0.5rem;
+    color: white;
+  }
+
+  .social-icons {
+    font-size: rem-calc(32);
+    color: white;
+    margin-right: 0.2rem;
+  }
+  
+  .pg-1-side-nav {
+    height: auto;
+    font-size: rem-calc(8);
+    width: 5%;
+    list-style-type: none;
+    display: inline-block;
+    position: absolute;
+    top: 41%;
+    color: white;
+  }
+  
+  .pg-1-pics-med {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .pg-1-pic-med {
+    @extend .pg-1-pics-med;
+    width: 50%;
+    position: absolute;
+    top: -8%;
+    z-index: -1000;
+  }
+  
+  .pg-1-pic-l {
+    @extend .pg-1-pic-med;
+    height: 100%;
+    width: 50.2%;
+    top: -0.2%;
+    left: -0.2%;
+    background-image: url("../img/photo-1453396450673-3fe83d2db2c4.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-left: 0.01rem;
+  }
+  
+  .pg-1-pic-r {
+    @extend .pg-1-pic-med;
+    height: 100%;
+    width: 50.2%;
+    top: -0.2%;
+    right: -0.2%;
+    background-image: url("../img/photo-by-Greg-Raines.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-right: 0.1rem;
+  }
+  
+  .pg-1-text-container {
+    height: 90%;
+    width: 96.5%;
+    line-height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 4rem;
+    right: 0rem; 
+  }
+  
+  .pg-1-text-wrap {
+    min-width: 19rem;
+    position: absolute;
+    top: 55%;
+    left: 48.2%;
+    line-height: normal;
+    color: white;
+  }
+  
+  .pg-1-title {
+    height: 7rem;
+    width: 11rem;
+    margin-right: 4%;
+    margin-bottom: 6%;
+  }
+  
+  .pg-1-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(13.5);
+    font-weight: 400;
+    text-align: center;
+    background: none;
+    line-height: 150%;
+    margin-bottom: 6%;
+  }
+  
+  .pg-1-text-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(13.5);
+    font-weight: 400;
+    text-align: center;
+    background: none;
+    font-weight: bolder;
+    margin-bottom: 10%;
+  }
+  
+  .pg-1-down-arrow {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media #{$small-only} {
+  
+  .pg-1-text-container {
+    height: 90%;
+    width: 88%;
+    line-height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 4rem;
+    right: 0rem; 
+  }
+ 
+  .header-pg-1 {
+    height: 9%;
+    width: 100%;
+    background: none;
+    color: white;
+    position: relative;
+  }
+  
+  .lds-logo {
+    height: 100%;
+    width: 7.7rem;
+    position: absolute;
+    left: 3%;
+    background-color: white;
+  }
+
+  .soc-med {
+    margin-right: 0rem;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+  }
+
+  .share {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 600;
+    margin-right: 0.25rem;
+    position: relative;
+    bottom: 0.20rem;
+    color: white;
+  }
+
+  .social-icons {
+    font-size: rem-calc(30);
+    color: white;
+    margin-right: 0.1rem;
+  }
+  
+  .pg-1-side-nav {
+    height: auto;
+    font-size: rem-calc(10);
+    width: 5%;
+    list-style-type: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    color: white;
+  }
+  
+  .pg-1-pics-sm {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .pg-1-pic-sm {
+    @extend .pg-1-pics-sm;
+    width: 50%;
+    position: absolute;
+    top: -5%;
+    z-index: -1000;
+  }
+  
+  .pg-1-pic-l {
+    @extend .pg-1-pic-sm;
+    height: 100%;
+    width: 50%;
+    top: -0.3%;
+    left: -0.4%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/photo-1453396450673-3fe83d2db2c4.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .pg-1-pic-r {
+    @extend .pg-1-pic-sm;
+    height: 100%;
+    width: 50%;
+    top: -0.3%;
+    right: -0.4%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/photo-by-Greg-Raines.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .pg-1-text-wrap {
+    width: 75%;
+    min-width: inherit;
+    display: inline-block;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-59.5%, -50%);
+    line-height: normal;
+    color: white;
+  }
+  
+  .pg-1-title {
+    height: 6rem;
+    width: 9rem;
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+  
+  .pg-1-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(12);
+    font-weight: 600;
+    text-align: center;
+    background: none;
+  }
+  
+  .pg-1-text-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(12);
+    font-weight: 600;
+    text-align: center;
+    background: none;
+    font-weight: bolder;
+    margin-bottom: 15%;
+  }
+  
+  .pg-1-down-arrow {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+//Used For Pages One Through Six
+//------------------------------
+
+.nav {
+  color: white;
+}
+
+.nav-active {
+  color: #FBB03B;
+}
+
+@media #{$small-only} {
+  
+  .break {
+    display: none;  
+  }
+}
+
+//Page Two
+//========
+
+.pg-2-bacrnd-img {
+  @extend .pgs-2-5-inner-container;
+  background-image: url(../img/P2_Background.png);
+  background-size: rem-calc(1440) 107%;
+  background-position: center;
+  max-width: 1440px;
+}
+
+.pg-2-txt-img-wrap {
+  height: 16.2rem;
+  width: 24.7rem;
+  position: absolute;
+  top: 16%;
+  left: 8%;
+}
+
+.pg-2-txt-img {
+  height: 100%;
+  width: 100%;
+}
+
+.pg-2-watch-btn {
+  height: 4.4rem;
+  width: 11.6rem;
+  position: absolute;
+  top: 49.6%;
+  left: 22%;
+}
+
+.pg-2-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.69em;
+  position: absolute;
+  top: 62%;
+  left: 7.3%;
+  color: white;
+  font-weight: 400;
+}
+
+.pg-2-mobile-title {
+  display: none;
+}
+
+.pg-2-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 148%;
+  position: absolute;
+  top: 68%;
+  left: 7.3%;
+  color: white;
+  font-weight: 400;
+}
+
+.pg-2-mobile-text {
+    display: none;
+  }
+
+@media #{$medium-only} {
+  
+  .pg-2-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 1.5em solid white; 
+    background-image: url(../img/P2_Background.png);
+    background-size: rem-calc(1023px) 107%;
+    background-position: center;
+  }
+  
+  .pg-2-txt-img-wrap {
+    height: 11.6rem;
+    width: 17.8rem;
+    position: absolute;
+    top: 13.5%;
+    left: 6.4%;
+  }
+
+  .pg-2-watch-btn {
+    height: rem-calc(45);
+    width: rem-calc(125);
+    position: absolute;
+    top: 49%;
+    left: 21.8%;
+  }
+
+  .pg-2-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(19);
+    position: absolute;
+    top: 61%;
+    left: 6%;
+    color: white;
+    font-weight: 400;
+  }
+
+  .pg-2-mobile-title {
+    display: none;
+  }
+  
+  .pg-2-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: rem-calc(12.5);
+    line-height: 155%;
+    position: absolute;
+    top: 67%;
+    left: 6%;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .pg-2-mobile-text {
+    display: none;
+  }
+}
+
+@media #{$small-only} {
+  
+  .pg-2-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(../img/P-2-mobile.png);
+    background-size: 106% 108%;
+    background-position: 52% 43%;
+  }
+  
+  .side-nav-container.pg-2-side-nav-container-mobile {
+    height: 22%;
+    width: 5%;
+    position: absolute;
+    top: 44%;
+    left: 0%;
+  }
+  
+  .pg-2-txt-img-wrap {
+    height: 10.5rem;
+    width: 14rem;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+
+  .pg-2-watch-btn {
+    height: 3rem;
+    width: 6.7rem;
+    position: absolute;
+    top: 52%;
+    left: 5%;
+    transform: translate(50%, 0%);
+  }
+
+  .pg-2-title {
+    display: none;
+  }
+  
+  .pg-2-mobile-title {
+    display: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(16);
+    position: absolute;
+    top: 68.5%;
+    left: 1%;
+    color: white;
+    font-weight: 400;
+  }
+
+  .pg-2-text {
+    display: none;
+  } 
+  
+  .pg-2-mobile-text {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: rem-calc(11);
+    line-height: 185%;
+    position: absolute;
+    top: 76%;
+    left: 1%;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+//Used For Pages Two Through Five
+//-------------------------------
+
+.pgs-2-5-inner-container{
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 2.3em solid white; 
+}
+
+.pgs-2-5-fol-him-container {
+  height: 6em;
+  width: 9em;
+  position: absolute;
+  top: 4%;
+  right: 2.5%;
+}
+
+.pgs-2-5-fol-him-img {
+  height: 100%;
+  width: 100%;   
+}
+
+.pg-2-5-txt-container {
+  height: 51rem;
+  width: 45rem;
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+
+@media screen and (max-height: 545px) and (max-width: 321px) {
+  
+  .pg-2-5-txt-container {
+    height: 25rem !important; 
+    width: 45rem;
+    position: absolute;
+    top: 2rem !important;
+    left: 3rem;
+  }
+}
+
+@media screen and (max-height: 840px) and (min-width: 1024px) {
+  
+  .pg-2-5-txt-container {
+    height: 47rem !important; 
+    width: 45rem;
+    position: absolute;
+    top: -4rem !important;
+    left: 3rem;
+  }
+}
+
+.pgs-2-5-nav-arrow-container {
+  height: 1.5em;
+}
+
+.side-nav-arrow {
+  height: 53%;
+  width: 32%;
+  position: relative;
+  top: -0.96em;
+  left: -2.1em;
+}
+
+.pgs-2-5-nav-arrow-img {
+  height: rem-calc(42.578);
+  width: rem-calc(21.977);
+  position: relative;
+  left: -0.25em;
+}
+
+.fa-stack {
+  width: 1em;
+}
+
+.pgs-2-5-cta {
+  height: 4rem;
+  width: 36.4rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;  
+}
+
+.pgs-2-5-cta-btn {
+  height: 100%;
+  width: 100%;
+}
+
+@media #{$medium-only} {
+
+  .side-nav-arrow {
+    height: 53%;
+    width: 32%;
+    position: relative;
+    top: -0.47rem;
+    left: -1.06rem;
+  }
+
+  .pgs-2-5-nav-arrow-img {
+    height: rem-calc(28.385);
+    width: rem-calc(14.651);
+  }
+  
+  .pgs-2-5-fol-him-container {
+    height: 4.3em;
+    width: 6.7em;
+    position: absolute;
+    top: 4.5%;
+    right: 2.9%;
+  }
+  
+  .pg-2-5-txt-container {
+    height: 35rem;
+    width: 30rem;
+    position: absolute;
+    left: 2rem;
+  }
+  
+  @media screen and (max-height: 610px) and (max-width: 1023px) and (min-width: 641px) {
+  
+  .pg-2-5-txt-container {
+    height: 32rem !important; 
+    width: 30rem;
+    position: absolute;
+    top: -4rem !important;
+    left: 3rem;
+  }
+}
+  
+  .pgs-2-5-cta {
+    height: 3em;
+    width: 26em;
+    position: absolute;
+    bottom: 0;
+    right: 0;  
+  }
+}
+
+@media #{$small-only} {
+  
+  .pgs-2-5-inner-container{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 0.5em solid white; 
+  }
+  
+  .pgs-2-5-nav-arrow-container {
+    height: 1.5em;
+    width: 4em;
+  }
+  
+  .side-nav-arrow {
+    height: 53%;
+    width: 32%;
+    position: relative;
+    top: -0.84em;
+    left: -1.3em;
+  }
+  
+  .fa-stack {
+    width: 2em;
+  }
+  
+  .pgs-2-5-nav-arrow-img {
+    height: rem-calc(28.385);
+    width: rem-calc(14.651);
+    margin: 0em -0.6em 0em 0em;
+  }
+  
+  .pgs-2-5-fol-him-container {
+    height: 8%;
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  
+  .pg-2-5-txt-container {
+    height: 27rem;
+    width: 16.9rem;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+  }
+
+  .pgs-2-5-cta {
+    height: 6%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+  }
+
+  .pgs-2-5-cta-btn {
+    height: 100%;
+    width: 100%;
+  }  
+}
+
+//Used For Pages Two Through Six
+//------------------------------
+
+.side-nav-container {
+  height: 22%;
+  width: 5%;
+  position: absolute;
+  top: 41%;
+  left: 0%;
+}
+
+.pgs-2-6-side-nav {
+  height: 100%;
+  width: 100%;
+  font-size: rem-calc(12);
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  position: relative;
+  top: -2em;
+}
+
+@media #{$medium-only} {
+  
+  .side-nav-container {
+    height: 22%;
+    width: 5%;
+    position: absolute;
+    top: 41%;
+    left: 0%;
+  }
+
+  .pgs-2-6-side-nav {
+    height: 100%;
+    width: 100%;
+    font-size: rem-calc(8);
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    right: 20%;
+    color: white;
+  }
+}
+
+@media #{$small-only} {
+  
+  .pgs-2-6-side-nav {
+    height: 100%;
+    width: 100%;
+    font-size: rem-calc(8);
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    right: 86%;
+    color: white;
+  }
+}
+
+//Page Three
+//----------
+
+.pg-3-bacrnd-img {
+  @extend .pgs-2-5-inner-container;
+  background-image: url(../img/P3_Background.png);
+  background-size: rem-calc(1440) 108%;
+  background-position: center;
+  max-width: 1440px;
+}
+
+.pg-3-txt-img-wrap {
+  height: 17em;
+  width: 27em;
+  position: absolute;
+  top: 12.5%;
+  left: 6.1%;
+}
+
+.pg-3-txt-img {
+  height: 100%;
+  width: 100%;
+}
+
+.pg-3-watch-btn {
+  height: 4.4em;
+  width: 12em;
+  position: absolute;
+  top: 48.5%;
+  left: 21.3%;
+}
+
+.pg-3-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.69rem;
+  position: absolute;
+  top: 61%;
+  left: 7.8%;
+  color: white;
+  font-weight: 400;
+}
+
+.pg-3-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 145%;
+  position: absolute;
+  top: 67%;
+  left: 7.8%;
+  color: white;
+  font-weight: 400;
+}
+
+.pg-3-mobile-text {
+    display: none;
+  }
+
+@media #{$medium-only} {
+  
+  .pg-3-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 1.5em solid white; 
+    background-image: url(../img/P3_Background.png);
+    background-size: rem-calc(1023px) 108%;
+    background-position: center;
+  }
+  
+  .pg-3-txt-img-wrap {
+    height: 11.5em;
+    width: 17.3em;
+    position: absolute;
+    top: 14%;
+    left: 8.5%;
+  }
+
+  .pg-3-watch-btn {
+    height: rem-calc(45);
+    width: rem-calc(125);
+    position: absolute;
+    top: 50%;
+    left: 24%;
+  }
+
+  .pg-3-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(18);
+    position: absolute;
+    top: 64%;
+    left: 10%;
+    color: white;
+    font-weight: 400;
+  }
+
+  .pg-3-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: rem-calc(13);
+    line-height: 150%;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .pg-3-mobile-text {
+    display: none;
+  }
+}
+
+@media #{$small-only} {
+  
+  .pg-3-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/P3_Background.png);
+    background-size: 240% 94.2%;
+    background-position: 91% 0%;
+  }
+  
+  .side-nav-container.pg-3-side-nav-container-mobile {
+    height: 22%;
+    width: 5%;
+    position: absolute;
+    top: 40.8%;
+    left: 0%;
+  }
+  
+  .pg-3-txt-img-wrap {
+    height: 32%;
+    width: 87%;
+    position: absolute;
+    top: 11%;
+    left: 2%;
+  }
+
+  .pg-3-watch-btn {
+    height: rem-calc(50);
+    width: rem-calc(125);
+    position: absolute;
+    top: 46%;
+    left: -2%;
+    transform: translate(50%, 0%);
+  }
+
+  .pg-3-title {
+    display: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(16);
+    position: absolute;
+    top: 63%;
+    left: 2%;
+    color: white;
+    font-weight: 400;
+  }
+
+  .pg-3-text {
+    display: none;
+  } 
+  
+  .pg-3-mobile-text {
+    display: inline-block;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: rem-calc(11);
+    line-height: 185%;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+//Page Four
+//---------
+
+.pg-4-bacrnd-img {
+  @extend .pgs-2-5-inner-container;
+  background-image: url(../img/P4_Background.png);
+  background-size: rem-calc(1440) 102%;
+  max-width: 1440px;
+}
+
+.pg-4-txt-img-wrap {
+  height: 17.9rem;
+  width: 26.5rem;
+  position: absolute;
+  top: 11%;
+  left: 7.8%;
+}
+
+.pg-4-txt-img {
+  height: 100%;
+  width: 100%;
+}
+
+.pg-4-watch-btn {
+  height: 4.4rem;
+  width: 12rem;
+  position: absolute;
+  top: 48%;
+  left: 23.5%;
+}
+
+.pg-4-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.74rem;
+  position: absolute;
+  top: 59.4%;
+  left: 8%;
+  color: white;
+  font-weight: 400;
+}
+
+.pg-4-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 145%;
+  position: absolute;
+  top: 66%;
+  left: 8%;
+  color: white;
+  font-weight: 400;
+}
+
+.pg-4-mobile-text {
+    display: none;
+  }
+
+
+@media #{$medium-only} {
+  
+  .pg-4-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 1.5em solid white; 
+    background-image: url(../img/P4_Background.png);
+    background-size: rem-calc(1023px) 102%;
+    background-position: center;
+  }
+  
+  .pg-4-txt-img-wrap {
+    height: 11.5em;
+    width: 18.9em;
+    position: absolute;
+    top: 13.8%;
+    left: 5.6%;
+  }
+
+  .pg-4-watch-btn {
+    height: rem-calc(45);
+    width: rem-calc(125);
+    position: absolute;
+    top: 48.5%;
+    left: 21%;
+  }
+
+  .pg-4-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(18);
+    position: absolute;
+    top: 61%;
+    left: 5%;
+    color: white;
+    font-weight: 400;
+  }
+
+  .pg-4-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: rem-calc(13.5);
+    line-height: 150%;
+    position: absolute;
+    top: 67.5%;
+    left: 5%;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .pg-4-mobile-text {
+    display: none;
+  }
+}
+
+@media #{$small-only} {
+  
+  .pg-4-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/P4_Background.png);
+    background-size: 235% 94.2%;
+    background-position: 71% 0%;
+  }
+  
+  .side-nav-container.pg-4-side-nav-container-mobile {
+    height: 22%;
+    width: 5%;
+    position: absolute;
+    top: 40.8%;
+    left: 0%;
+  }
+  
+  .pg-4-txt-img-wrap {
+    height: 32%;
+    width: 87%;
+    position: absolute;
+    top: 11%;
+    left: 3%;
+  }
+
+  .pg-4-watch-btn {
+    height: rem-calc(50);
+    width: rem-calc(125);
+    position: absolute;
+    top: 46%;
+    left: -2%;
+    transform: translate(50%, 0%);
+  }
+
+  .pg-4-title {
+    display: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(16);
+    position: absolute;
+    top: 63%;
+    left: 2%;
+    color: white;
+    font-weight: 400;
+  }
+
+  .pg-4-text {
+    display: none;
+  } 
+  
+  .pg-4-mobile-text {
+    display: inline-block;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: rem-calc(11);
+    line-height: 185%;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+//Page Five
+//---------
+
+.pg-5-bacrnd-img {
+  @extend .pgs-2-5-inner-container;
+  background-image: url(../img/P5_Background.png);
+  background-size: rem-calc(1440) 105%;
+  background-position: 0% 100%;
+  max-width: 1440px;
+}
+
+.pg-5-txt-img-wrap {
+  height: 14.5rem;
+  width: 25rem;
+  position: absolute;
+  top: 9%;
+  left: 12.6%;
+}
+
+.pg-5-txt-img {
+  height: 100%;
+  width: 100%;
+}
+
+.pg-5-watch-btn {
+  height: 4.4rem;
+  width: 12rem;
+  position: absolute;
+  top: 39%;
+  left: 25.5%;
+}
+
+.pg-5-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.69rem;
+  position: absolute;
+  top: 53.5%;
+  left: 10.6%;
+  color: white;
+  font-weight: 400;
+}
+
+.pg-5-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.23rem;
+  line-height: 145%;
+  position: absolute;
+  top: 59.5%;
+  left: 10.6%;
+  color: white;
+  font-weight: 400;
+}
+
+.pg-5-mobile-text {
+    display: none;
+  }
+
+.pg-5-cta {
+  height: 7rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+}
+
+.pg-5-cta-btns {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  bottom: 0%;
+}
+
+.pg-5-cta-btn-l {
+  @extend .pg-5-cta-btns;
+  left: 0%;
+  padding-right: 0.1em;
+}
+
+.pg-5-cta-btn-l-img {
+  height: 100%;
+  width: 100%;
+}
+
+.pg-5-cta-btn-r {
+  @extend .pg-5-cta-btns;
+  right: 0%;
+  padding-left: 0.1em;
+}
+
+.pg-5-cta-btn-r-img {
+  height: 100%;
+  width: 100%;
+}
+
+@media #{$medium-only} {
+  
+  .pg-5-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 1.5em solid white; 
+    background-image: url(../img/P5_Background.png);
+    background-size: rem-calc(1023px) 100%;
+    background-position: center;
+  }
+  
+  .pg-5-txt-img-wrap {
+    height: 10.25em;
+    width: 18em;
+    position: absolute;
+    top: 13.7%;
+    left: 7.5%;
+  }
+
+  .pg-5-watch-btn {
+    height: rem-calc(45);
+    width: rem-calc(126);
+    position: absolute;
+    top: 44%;
+    left: 28%;
+  }
+
+  .pg-5-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(18);
+    position: absolute;
+    top: 58%;
+    left: 9.3%;
+    color: white;
+    font-weight: 400;
+  }
+
+  .pg-5-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: rem-calc(13.5);
+    line-height: 150%;
+    position: absolute;
+    top: 64.5%;
+    left: 9.3%;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .pg-5-mobile-text {
+    display: none;
+  }
+  
+  .pg-5-cta {
+    height: 5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media #{$small-only} {
+  
+  .pg-5-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(../img/P-5-mobile.png);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+  }
+  
+  .side-nav-container.pg-5-side-nav-container-mobile {
+    height: 22%;
+    width: 5%;
+    position: absolute;
+    top: 40.8%;
+    left: 0%;
+  }
+  
+  .pg-5-txt-img-wrap {
+    height: 32%;
+    width: 87%;
+    position: absolute;
+    top: 11%;
+    left: 2%;
+  }
+
+  .pg-5-watch-btn {
+    height: rem-calc(50);
+    width: rem-calc(125);
+    position: absolute;
+    top: 46%;
+    left: -2%;
+    transform: translate(50%, 0%);
+  }
+
+  .pg-5-title {
+    display: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(15);
+    position: absolute;
+    top: 66%;
+    left: 3%;
+    color: white;
+    font-weight: 900;
+  }
+
+  .pg-5-text {
+    display: none;
+  } 
+  
+  .pg-5-mobile-text {
+    display: inline-block;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: rem-calc(10);
+    line-height: 185%;
+    position: absolute;
+    top: 73%;
+    left: 3%;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .pg-5-cta {
+    display: none;
+  }
+
+  .pg-5-cta-btns {
+    display: none;
+  }
+
+  .pg-5-cta-btn-l {
+    display: none;
+  }
+
+  .pg-5-cta-btn-r {
+    display: none;
+  }
+}
+
+//Page Six
+//--------
+
+.pg-6-bacrnd-img {
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  background-image: url(../img/P6_Background.png);
+  background-repeat: no-repeat;
+  background-size: rem-calc(1440) 100%;
+  background-position: top center;
+}
+
+.pg-6-text-wrap {
+  height: 60%;
+  max-height: 35rem;
+  min-height: 30rem;
+  width: 94%;
+  display: inline-block;
+  position: absolute;
+  top: 50.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: normal;
+  color: white;
+}
+
+.pg-6-title {
+  height: 8rem;
+  width: 12.25rem;
+  position: relative;
+  top: 54%;
+  left: 50.2%;
+  transform: translate(-50%, 5%);
+  margin-bottom: 3%;
+}
+
+.pg-6-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: rem-calc(21);
+  font-weight: 600;
+  text-align: center;
+  background: none;
+  margin-bottom: 0.8rem;
+}
+
+.pg-6-txt-highlight {
+  font-size: rem-calc(19.5);
+  font-weight: 600;
+  text-align: center;
+  background: none;
+  color: #FBB03B;
+}
+
+.pg-6-cta {
+  height: 21%;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.pg-6-cta-title {
+  height: 8%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: rem-calc(36);
+  display: inline-block;
+  position: absolute;
+  bottom: 9.7%;
+  left: 0%;
+}
+
+.pg-6-cta-title-mobile {
+    display: none;
+  }
+
+.pg-6-cta-btn {
+  height: rem-calc(57);
+  width: rem-calc(57);
+  display: inline-block;
+  position: relative;
+  left: 1.5%;
+}
+
+.pg-6-cta-btn-img {
+  height: 100%;
+  width: 100%;
+}
+
+.pg-6-soc-med {
+  margin-right: 1.25rem;
+  position: absolute;
+  bottom: 4%;
+  right: -1%;
+}
+
+.pg-6-share {
+  font-family: 'Open Sans', sans-serif;
+  font-size: rem-calc(21);
+  font-weight: 700;
+  margin-right: 0.2rem;
+  position: relative;
+  bottom: 0.5rem;
+  color: white;
+}
+
+.pg-6-social-icons {
+  font-size: rem-calc(48);
+  color: white;
+  margin-right: 0.25rem;
+}
+
+.pg-6-footer {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0%; 
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 0.5rem;
+}
+
+.pg-6-footer-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: rem-calc(15);
+  font-weight: 600;
+  margin-bottom: -1rem;
+}
+
+@media #{$medium-only} {
+  
+  .pg-6-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative; 
+    background-image: url(../img/P6_Background.png);
+    background-size: rem-calc(1023px) 100%;
+    background-position: center;
+  }
+  
+  .pg-6-text-wrap {
+    height: 60%;
+    max-height: 35rem;
+    min-height: 30rem;
+    width: 95%;
+    display: inline-block;
+    position: absolute;
+    top: 50.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: normal;
+    color: white;
+  }
+
+  .pg-6-title {
+    height: 25%;
+    width: 15%;
+    margin-bottom: 3.6%;
+  }
+
+  .pg-6-txt {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(14);
+    font-weight: 400;
+    text-align: center;
+    background: none;
+    margin-bottom: 0.8rem;
+  }
+
+  .pg-6-txt-highlight {
+    font-size: rem-calc(13);
+    font-weight: 400;
+    text-align: center;
+    background: none;
+    color: #FBB03B;
+  }
+
+  .pg-6-cta {
+    height: 17%;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  .pg-6-cta-title {
+    height: 8%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: rem-calc(24);
+    display: inline-block;
+    position: absolute;
+    bottom: 9.7%;
+    left: 0%;
+  }
+  
+  .pg-6-cta-title-mobile {
+    display: none;
+  }
+
+  .pg-6-cta-btn {
+    height: rem-calc(38);
+    width: rem-calc(38);
+    display: inline-block;
+  }
+
+  .pg-6-cta-btn-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .pg-6-soc-med {
+    margin-right: 1.25em;
+    position: absolute;
+    bottom: 4%;
+    right: -1%;
+  }
+
+  .pg-6-share {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(14);
+    font-weight: 700;
+    margin-right: 0.2em;
+    position: relative;
+    bottom: 0.5em;
+    color: white;
+  }
+
+  .pg-6-social-icons {
+    font-size: rem-calc(32);
+    color: white;
+    margin-right: 0.25em;
+  }
+
+  .pg-6-footer {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%; 
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 0.5em;
+  }
+
+  .pg-6-footer-txt {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(11);
+    font-weight: 400;
+    margin-bottom: -1em;
+  }
+}
+
+@media #{$small-only} {
+  
+  .pg-6-bacrnd-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/P-6-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .pg-6-text-wrap {
+    height: 60%;
+    max-height: 22rem;
+    min-height: 21rem;
+    width: 87%;
+    display: inline-block;
+    position: absolute;
+    top: 51.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: normal;
+    color: white;
+  }
+  
+  @media screen and (max-width: 481px) {
+    
+    .pg-6-text-wrap {
+      height: 60%;
+      max-height: 20rem !important;
+      min-height: 19rem !important;
+      width: 87%;
+      display: inline-block;
+      position: absolute;
+      top: 51.3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: normal;
+      color: white;
+    }
+  }
+
+    
+  .pg-6-title {
+    height: 20.7%;
+    width: 35.3%;
+    margin-bottom: 14%;
+  }
+
+  .pg-6-txt {
+    max-width: 87%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(12);
+    font-weight: 600;
+    text-align: center;
+    line-height: 160%;
+    background: none;
+    margin-right: auto;
+    margin-bottom: 0.8em;
+    margin-left: auto;
+  }
+
+  .pg-6-txt-highlight {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(13);
+    font-weight: 600;
+    text-align: center;
+    background: none;
+    color: #FBB03B;
+  }
+
+  .pg-6-cta {
+    height: 45%;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  .pg-6-cta-title {
+    display: none;
+  }
+  
+  .pg-6-cta-title-mobile {
+    height: 34%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: rem-calc(24);
+    line-height: 121%;
+    display: inline-block;
+    position: absolute;
+    bottom: -17.5%;
+    left: 0%;
+  }
+
+  .pg-6-cta-btn {
+    height: rem-calc(38);
+    width: rem-calc(38);
+    display: inline-block;
+    position: absolute;
+    left: 43%;
+    top: 63%;
+  }
+
+  .pg-6-cta-btn-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .pg-6-soc-med {
+    display: none;
+  }
+
+  .pg-6-share {
+    display: none;
+  }
+
+  .pg-6-social-icons {
+    display: none;
+  }
+
+  .pg-6-footer {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%; 
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 0.5em;
+  }
+
+  .pg-6-footer-txt {
+    font-family: 'Open Sans', sans-serif;
+    font-size: rem-calc(8);
+    font-weight: 600;
+  }
+
+}
+
+//Self Worth Page
+//---------------
+
+
+//******************************** Find Self Worth ****************************************
+
+.self-worth_container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.background-img {
+  background: url("../img/Self-Worth_Background.png") no-repeat center center;
+  -webkit-background-size: cover;
+  padding-top: .89%;
+
+}
+
+.orange-arrow-button {
+    width: 6.5%;
+    position: relative;
+    top: 2.59em;
+    right: 8.4%;
+}
+.self-worth-video_container{
+  width: 62.361em;
+  margin-top: -2.5%;
+  margin-bottom: 1%
+}
+.social-media{
+  padding-left: .1rem;
+}
+.social-media_facebook-link{
+  max-width: 30%;
+}
+
+.social-media_twitter-link{
+  max-width: 30%;
+}
+
+.social-media_email-link{
+  max-width: 30%;
+}
+
+.second-row{
+  padding-bottom: 5.5%;
+}
+// .social-media{
+//   display: flex;
+//   justify-content: center;
+// }
+
+.cta-discover{
+  display: block;
+  margin: 0 auto;
+}
+
+.cta-box{
+    width: 35em;
+    height: 6.75em;
+    float: right;
+}
+
+.third-row{
+  margin-top: 4%;
+}
+
+.fourth-row{
+  margin-top: 2.2%;
+}
+
+.fourth-row_paragraph{
+  font-size: 20px;
+  max-width: 91%;
+  display: block;
+  margin: 0 auto;
+  line-height: 1.4em;
+  letter-spacing: -0.011em;
+}
+
+.fifth-row{
+  margin-top: 6.5%;
+  margin-bottom: 6.5%;
+}
+.follow-him_self-worth{
+  max-width: 24%;
+  margin: 0 auto;
+  margin-top: 3.3%;
+  margin-bottom: 1%;
+  display: block;
+}
+
+.discover-more-orange_p{
+  color: #F15A24;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  float: left;
+  font-size: 23px;
+  letter-spacing: 0.021em;
+}
+.orange-right-arrow_container{
+    max-width: 100%;
+    margin-left: 4%;
+}
+.orange-right-arrow{
+  max-width: 70%;
+  display: inline-block;
+  padding-top: 2%;
+  margin-left: -130%;
+}
+
+// ************************************ Love ****************
+
+.love-back-link {
+  height: 100%;
+  width: 100%;
+}
+.discover-more-blue_p{
+  color: #1EDEFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  float: left;
+  font-size: 23px;
+  letter-spacing: 0.021em;
+}
+.love_video{
+  width: 62.361em;
+  margin-top: -2.5%;
+  margin-bottom: 1%
+}
+
+
+// ************************************ Peace ****************
+
+.discover-more-yellow_p{
+  color: #FBB03B;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  float: left;
+  font-size: 23px;
+  letter-spacing: 0.021em;
+}
+// ********************************** Self Worth Media Queries *****************************
+
+@media #{$large-up} {
+  .self-worth-video {
+      padding-bottom: 53.7% !important;
+  }
+}
+
+@media #{$medium-only} {
+  .self-worth_container{
+  max-width: 640px;
+  }
+  .orange-arrow-button {
+    width: 6%;
+    position: relative;
+    top: 1.5em;
+    right: 3em;
+  }
+  .fourth-row_paragraph {
+    font-size: 17px;
+    max-width: 73%;
+  }
+  .orange-right-arrow {
+    max-width: 33%;
+    position: relative;
+    right: 1.2em;
+  }
+  .discover-more-orange_p {
+    font-size: 20px;
+    margin-left: 21%;
+  }
+  .discover-more-blue_p {
+    font-size: 16px;
+    margin-left: 21%;
+  }
+  .discover-more-yellow_p {
+    font-size: 16px;
+    margin-left: 21%;
+  }
+  .self-worth-video {
+      padding-bottom: 52.2% !important;
+  }
+  .cta-discover{
+  display: block;
+  margin: 0 auto;
+  }
+
+  .cta-box{
+    width: 21.5em;
+    height: 6.75em;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 64em) and (max-width: 74.813em) {
+  .orange-arrow-button {
+    width: 6%;
+    position: relative;
+    top: -0.3em;
+    right: -1em;
+    margin-bottom: 1.5em;
+  }
+  .blue-arrow-button {
+    width: 6%;
+    position: relative;
+    top: -0.3em;
+    right: -1em;
+    margin-bottom: 1.5em;
+  }
+  .yellow-arrow-button {
+    width: 6%;
+    position: relative;
+    top: -0.3em;
+    right: -1em;
+    margin-bottom: 1.5em;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 46em) {
+  .orange-arrow-button {
+    width: 6%;
+    position: relative;
+    top: -0.3em;
+    right: -1em;
+    margin-bottom: 1em;
+    margin-top: .2em;
+  }
+  .blue-arrow-button {
+    width: 6%;
+    position: relative;
+    top: -0.3em;
+    right: -1em;
+    margin-bottom: 1em;
+    margin-top: .2em;
+  }
+  .yello-arrow-button {
+    width: 6%;
+    position: relative;
+    top: -0.3em;
+    right: -1em;
+    margin-bottom: 1em;
+    margin-top: .2em;
+  }
+}
+@media #{$small-only}{
+  .background-img{
+    padding-top: 0em;
+  }
+  .orange-arrow-button {
+    width: 9%;
+    position: relative;
+    top: 0em;
+    right: -1em;
+    padding-top: .3em;
+    padding-bottom: 1em;
+  }
+  .social-media {
+    margin-bottom: 1.25em;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .social-media_facebook-link{
+  max-width: 32%;
+  }
+  .social-media_twitter-link{
+    max-width: 32%;
+  }
+  .social-media_email-link{
+    max-width: 32%;
+  }
+  .self-worth_container {
+    max-width: 23em;
+    margin: 0 auto;
+  }
+  .follow-him_self-worth {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    display: block;
+  }
+  .fourth-row_paragraph {
+    font-size: 16px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .discover-more-orange_p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #F15A24;
+  float: left;
+  font-size: 14px;
+  padding-left: 1em;
+  }
+  .discover-more-blue_p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #1EDEFF;
+  float: left;
+  font-size: 14px;
+  padding-left: 1em;
+  }
+  .discover-more-yellow_p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #FBB03B;
+  float: left;
+  font-size: 14px;
+  padding-left: 1em;
+  }
+  .orange-right-arrow {
+    width: 64%;
+    float: left;
+    margin-left: -1.7em;
+    margin-top: .1em;
+  }
+  .blue-right-arrow {
+    width: 64%;
+    float: left;
+    margin-left: -1.7em;
+    margin-top: .1em;
+  }
+  .self-worth-video {
+      padding-bottom: 47.7% !important;
+  }
+  .cta-box{
+    width: inherit;
+    height: inherit;
+    float: none;
+  }
+}
+
+
+// ********************************* Request Bible Start ***************************************
+
+.request-bible-container{
+  // margin-left: 5%;
+  // margin-right: 5%;
+  border-left: 2px solid #CCCCCC;
+  border-right: 2px solid #CCCCCC;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 6%;
+}
+
+.orange-header-bar{
+  background-color: #FBB03B;
+  height: 3.5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.white-left-arrow{
+  margin-left: 1.6em;
+  margin-right: .7em;
+  max-width: .65em;
+  margin-top: 1.2em;
+  display: block;
+  float: left;
+}
+.bible-link{
+  text-decoration: none;
+  height: 100%;
+  width:30%;
+}
+.orange-header-bar_return{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: black;
+  margin-top: 1.2em;
+}
+
+.bible_follow-him{
+  margin-top: 3.5%;
+}
+
+.follow-him_2{
+  display: block;
+  margin: 0 auto;
+  max-width: 45%;
+  position: relative;
+  bottom: .1em;
+  right: .1em;
+}
+
+.bible_free-copy{
+  font-weight: 200;
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  // max-width: 35%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+.bible_paragraph{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  // max-width: 52%;
+  margin: 0 auto;
+  margin-top: 1.5%;
+}
+
+.vertical-line_first{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
+
+.form-head_free-copy{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  // max-width: 36%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 4%;
+}
+
+.request-form{
+  // max-width: 52%;
+  background-color: #EAECEF;
+  padding: 3%;
+  display: block;
+  margin: 0 auto;
+}
+.red-text {
+  color: red;
+}
+.request-form_input_first-name{
+  margin-bottom: 5% !important;
+  padding: 1.5% !important;
+  font-size: 18px !important;
+  border: none !important;
+  height: 3.4375rem !important;
+  width: 100% !important;
+}
+
+.request-form_input_last-name{
+  margin-bottom: 0% !important;
+  padding: 1.5% !important;
+  font-size: 18px !important;
+  border: none !important;
+  height: 3.4375rem !important;
+  width: 100% !important;
+}
+.request-form_input_address{
+  margin-bottom: 5% !important;
+  margin-top: 5% !important;
+  padding: 1.5% !important;
+  font-size: 18px !important;
+  border: none !important;
+  height: 3.4375rem !important;
+  width: 100% !important;
+}
+::-webkit-input-placeholder{
+  padding-left: 0em;
+}
+
+.vertical-line_second{
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.request-bible-video{
+  // max-width: 52%;
+  margin: 0 auto;
+}
+
+.foot_closing-wrapper{
+  // max-width: 52%; 
+  display: block;
+  margin: 0 auto;
+}
+
+.foot_closing-line{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  color: #808080;
+  margin-bottom: 0.6em;
+  font-size: 16px;
+}
+
+.foot_cta{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #FBB03B;
+  float: left;
+  font-size: 20px;
+}
+
+.foot_yellow-right-arrow{
+  width: 4.3%;
+  float: left;
+  margin-left: 1%;
+}
+// *********************************** Bible Media Queries ************************************
+@media #{$large-up} {
+  .request-bible-video {
+      padding-bottom: 34.5% !important;
+  }
+}
+@media #{$medium-only} {
+  .right-column {
+    margin-top: 2.6em;
+  }
+  .form-head_free-copy{
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  .left-column{
+    margin-top: 1.5em;
+  }
+  .request-cta{
+    margin-bottom: 1em;
+  }
+  .foot_closing-line{
+    font-size: 13px;
+  }
+  .foot_cta{
+    font-size: 18px; 
+  }
+  .foot_orange-right-arrow{
+    margin-left: .5em;
+  }
+  .request-bible-video{
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  .request-bible-video {
+      padding-bottom: 34.5% !important;
+  }
+ }
+ 
+@media #{$small-only}{
+  .orange-header-bar{
+    height: 3em;
+  }
+  .white-left-arrow{
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: .8em;
+    max-width: .5em;
+  }
+  .orange-header-bar_return{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: black;
+    margin-top: .8em;
+  }
+  .follow-him_2{
+    max-width: 55%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .bible_free-copy{
+    margin-top: 0;
+    font-size: 1.5em;
+    max-width: 86%;
+  }
+  .bible_paragraph{
+    font-size: .75em;
+    margin-top: 4.5%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .form-head_free-copy{
+    margin-top: 0;
+    margin-bottom: 4%;
+    max-width: 80%;
+    font-size: 1.3em;
+    text-align: center;
+  }  
+  .vertical-line_first{
+    max-width: .14em;
+    margin-top: .5em;
+  }
+  
+  .request-form{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .request-form_input_first-name{
+  margin-bottom: 5% !important;
+  padding: 5% !important;
+  font-size: 18px !important;
+  border: none !important;
+  height: 2.4375rem !important;
+  width: 100% !important;
+}
+
+  .request-form_input_last-name{
+    margin-bottom: 0% !important;
+    padding: 5% !important;
+    font-size: 18px !important;
+    border: none !important;
+    height: 2.4375rem !important;
+    width: 100% !important;
+  }
+    .request-form_input_address{
+    margin-bottom: 0% !important;
+    padding: 5% !important;
+    font-size: 18px !important;
+    border: none !important;
+    height: 2.4375rem !important;
+    width: 100% !important;
+    margin-top: 5% !important;
+  }
+  ::-webkit-input-placeholder{
+    padding-left: 0em;
+  }
+  .foot_closing-line {
+    font-size: .5em;
+    margin-left: 5%;
+  }
+  .foot_cta{
+    font-size: .75em;
+    margin-left: 5%;
+  }
+  .foot_orange-right-arrow{
+    max-width: 5%;
+    float: left;
+    margin-left: .4em;
+  }
+  .request-bible-video{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 44.5% !important;
+    margin-bottom: .5em !important;
+  }
+  .request-form_button_submit{
+    margin-top: 5% !important;
+    background: #1EDEFF !important;
+  }
+}
+
+// ********************** Request Book of Mormon starts here ************************
+
+.request-book-of-mormon-container{
+  // margin-left: 5%;
+  // margin-right: 5%;
+  border-left: 2px solid #CCCCCC;
+  border-right: 2px solid #CCCCCC;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 6%;
+}
+.cta-page_container{
+  max-width: 34.337em;
+  display: block;
+  margin: auto;
+}
+.cta-page_container_video{
+  max-width: 51.537em;
+  display: block;
+  margin: auto;
+}
+.blue-header-bar{
+    background-color: #1EDEFF;
+    height: 3.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.white-left-arrow-bom{
+  margin-left: 1.6em;
+  margin-right: .7em;
+  max-width: .65em;
+  margin-top: 1.2em;
+  display: block;
+  float: left;
+}
+.bom-link{
+  text-decoration: none;
+  height: 100%;
+  width:25%;
+}
+.blue-header-bar_return{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: black;
+  margin-top: 1.2em;
+}
+
+.book-of-mormon_follow-him{
+  margin-top: 3.5%;
+}
+
+.follow-him_2-bom{
+  display: block;
+  margin: 0 auto;
+  max-width: 45%;
+  position: relative;
+  bottom: .1em;
+  right: .1em;
+}
+
+.book-of-mormon_free-copy{
+  font-weight: 200;
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  // max-width: 35%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+.book-of-mormon_paragraph{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  // max-width: 52%;
+  margin: 0 auto;
+  margin-top: 1.5%;
+}
+
+.vertical-line_first-bom{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
+
+.form-head-two_free-copy-bom{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  // max-width: 36%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 4%;
+}
+
+.request-form-bom{
+  // max-width: 52%;
+  background-color: #EAECEF;
+  padding: 3%;
+  display: block;
+  margin: 0 auto;
+}
+
+.request-form_input_first-name-bom{
+  margin-bottom: 5% !important;
+  padding: 1.5% !important;
+  font-size: 18px !important;
+  border: none !important;
+  height: 3.4375rem !important;
+  width: 100% !important;
+}
+
+.request-form_input_last-name-bom{
+  margin-bottom: 0% !important;
+  padding: 1.5% !important;
+  font-size: 18px !important;
+  border: none !important;
+  height: 3.4375rem !important;
+  width: 100% !important;
+}
+.request-form_input_address-bom{
+  margin-bottom: 5% !important;
+  margin-top: 5% !important;
+  padding: 1.5% !important;
+  font-size: 18px !important;
+  border: none !important;
+  height: 3.4375rem !important;
+  width: 100% !important;
+}
+
+::-webkit-input-placeholder{
+  padding-left: 0em;
+}
+
+.vertical-line_second-bom{
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.request-book-of-mormon-video{
+  // max-width: 52%;
+  margin: 0 auto;
+}
+
+.foot_closing-wrapper-bom{
+  // max-width: 52%; 
+  display: block;
+  margin: 0 auto;
+}
+
+.foot_closing-line-bom{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  color: #808080;
+  margin-bottom: 0.6em;
+  font-size: 16px;
+}
+
+.foot_cta-bom{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #1EDEFF;
+  float: left;
+  font-size: 20px;
+}
+
+.foot_blue-right-arrow-bom{
+  width: 4.3%;
+  float: left;
+  margin-left: 1%;
+}
+.request-form_button_submit{
+  background: #CCD9E2;
+}
+
+
+// *********************************** Book of Mormon Media Queries *********************************
+
+@media #{$large-up} {
+  .request-book-of-mormon-video {
+      padding-bottom: 34.5% !important;
+  }
+}
+
+@media #{$medium-only} {
+  .bom-right-column {
+    margin-top: 2.6em;
+  }
+  
+  .form-head-two_free-copy-bom{
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  .bom-left-column{
+    margin-top: 1.5em;
+  }
+  .bom-request-cta{
+    margin-bottom: 1em;
+  }
+  .foot_closing-line-bom{
+    font-size: 13px;
+  }
+  .foot_cta-bom{
+    font-size: 18px; 
+  }
+  .foot_blue-right-arrow-bom{
+    margin-left: .5em;
+  }
+  .request-book-of-mormon-video{
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  .request-book-of-mormon-video {
+      padding-bottom: 34.5% !important;
+  }
+ }
+ 
+@media #{$small-only}{
+  .blue-header-bar{
+    height: 3em;
+  }
+  .blue-header-bar_return{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: black;
+    margin-top: .8em;
+  }
+  .white-left-arrow-bom{
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: .8em;
+    max-width: .5em;
+  }
+  .follow-him_2-bom{
+    max-width: 55%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .book-of-mormon_free-copy{
+    margin-top: 0;
+    font-size: 1.5em;
+    max-width: 86%;
+  }
+  .book-of-mormon_paragraph{
+    font-size: .75em;
+    margin-top: 4.5%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .form-head-two_free-copy-bom{
+    margin-top: 0;
+    margin-bottom: 4%;
+    max-width: 80%;
+    font-size: 1.3em;
+    text-align: center;
+  }  
+  .vertical-line_first-bom{
+    max-width: .14em;
+    margin-top: .5em;
+  }
+  
+  .request-form-bom{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .request-form_input_first-name-bom{
+  margin-bottom: 5% !important;
+  padding: 5% !important;
+  font-size: 18px !important;
+  border: none !important;
+  height: 2.4375rem !important;
+  width: 100% !important;
+}
+
+  .request-form_input_last-name-bom{
+    margin-bottom: 0% !important;
+    padding: 5% !important;
+    font-size: 18px !important;
+    border: none !important;
+    height: 2.4375rem !important;
+    width: 100% !important;
+  }
+    .request-form_input_address-bom{
+    margin-bottom: 0% !important;
+    padding: 5% !important;
+    font-size: 18px !important;
+    border: none !important;
+    height: 2.4375rem !important;
+    width: 100% !important;
+    margin-top: 5% !important;
+  }
+  ::-webkit-input-placeholder{
+    padding-left: 0em;
+  }
+  .foot_closing-line-bom {
+    font-size: .5em;
+    margin-left: 5%;
+  }
+  .foot_cta-bom{
+    font-size: .75em;
+    margin-left: 5%;
+  }
+  .foot_blue-right-arrow-bom{
+    max-width: 5%;
+    float: left;
+    margin-left: .4em;
+  }
+  .request-book-of-mormon-video{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 44.5% !important;
+    margin-bottom: .5em !important;
+  }
+  .request-form_button_submit{
+    margin-top: 5% !important;
+    background: #1EDEFF !important;
+  }
+}
+
+//******************************* Book of Mormon Landscape View ***********************************
+ 
+@media only screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .blue-header-bar {
+    height: 3em;
+  } 
+  .white-left-arrow-bom{
+    max-width: 3.3%;
+    margin-top: 7%;
+    margin-right: 4.5%;
+  }
+  .blue-header-bar_return{
+    font-size: 13px;
+    margin-top: 6%;
+  }
+  .book-of-mormon_free-copy{
+    font-size: 1.9em;
+  }
+  .bom-right-column {
+      margin-top: 2.6em;
+  }
+  .form-head-two_free-copy-bom{
+      margin-top: 0;
+      padding-top: 0;
+      margin: 0 !important;
+      width: 100% !important;
+      font-size: 1.38em;
+  }
+  .bom-left-column_container{
+      margin-left: 14%;
+      width: 100% !important;
+      margin: 0 auto;
+      display: block;
+      max-width: 50%;   
+  }
+  .vertical-line_first-bom{
+     display: none;
+  }
+  
+  .vertical-line_second-bom{
+     display: none;
+  }
+  .request-form-bom{
+    margin-left: 6% !important;
+    margin-right: 6%;
+    width: 92% !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .bom-left-column{
+      margin-top: 1.8em;
+      float: left;
+      width: 50%;
+  }
+  .request-book-of-mormon-video{
+    width: 43% !important;
+    padding-bottom: 21.9% !important;
+    position: relative;
+    left: 4%;
+    top: -4%;
+    margin-bottom: 1% !important;
+  }
+  .foot_closing-wrapper-bom{
+    max-width: 43%;
+    position: relative;
+    left: 29%;
+  }
+  .bom-request-cta{
+    margin-bottom: 1em;
+    width: 63% !important;
+    font-size: .89em;
+    margin-left: 18.4% !important;
+  }   
+  .foot_closing-line-bom{
+      font-size: 13px;
+  }
+  .foot_cta-bom{
+      font-size: 18px; 
+  }
+  .foot_blue-right-arrow-bom{
+      margin-left: .5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
