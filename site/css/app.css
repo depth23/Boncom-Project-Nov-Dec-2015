@@ -503,7 +503,27 @@ html, body {
   width: 11.6rem;
   position: absolute;
   top: 49.6%;
-  left: 22%; }
+  left: 22%;
+  background-color: #22e2ff; }
+
+.pg-2-watch-btn-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.63rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-bottom: 0.63rem solid transparent;
+  position: absolute;
+  top: 1.6rem;
+  left: 2.15rem; }
+
+.pg-2-watch-btn-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 1.1rem;
+  right: 2.4rem; }
 
 .pg-2-title {
   font-family: 'Open Sans', sans-serif;
@@ -794,7 +814,7 @@ html, body {
   color: white;
   font-size: 1.8rem;
   border-radius: 50%;
-  line-height: 75%;
+  line-height: 50%;
   position: relative;
   top: 0.25rem; }
 
@@ -949,7 +969,27 @@ html, body {
   width: 12em;
   position: absolute;
   top: 48.5%;
-  left: 21.3%; }
+  left: 21.3%;
+  background-color: #f4b341; }
+
+.pg-3-watch-btn-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.63rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-bottom: 0.63rem solid transparent;
+  position: absolute;
+  top: 1.6rem;
+  left: 2.2rem; }
+
+.pg-3-watch-btn-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 1.1rem;
+  right: 2.5rem; }
 
 .pg-3-title {
   font-family: 'Open Sans', sans-serif;
@@ -1108,7 +1148,27 @@ html, body {
   width: 12rem;
   position: absolute;
   top: 48%;
-  left: 23.5%; }
+  left: 23.5%;
+  background-color: #f16428; }
+
+.pg-4-watch-btn-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.63rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-bottom: 0.63rem solid transparent;
+  position: absolute;
+  top: 1.62rem;
+  left: 2.3rem; }
+
+.pg-4-watch-btn-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 1.1rem;
+  right: 2.5rem; }
 
 .pg-4-title {
   font-family: 'Open Sans', sans-serif;
@@ -1267,7 +1327,27 @@ html, body {
   width: 12rem;
   position: absolute;
   top: 39%;
-  left: 25.5%; }
+  left: 25.5%;
+  background-color: #fbb943; }
+
+.pg-5-watch-btn-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.63rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-bottom: 0.63rem solid transparent;
+  position: absolute;
+  top: 1.55rem;
+  left: 2.34rem; }
+
+.pg-5-watch-btn-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 1.02rem;
+  right: 2.45rem; }
 
 .pg-5-title {
   font-family: 'Open Sans', sans-serif;
@@ -1300,25 +1380,52 @@ html, body {
 
 .pg-5-cta-btns, .pg-5-cta-btn-l, .pg-5-cta-btn-r {
   height: 100%;
-  width: 50%;
+  width: 49.75%;
   position: absolute;
-  bottom: 0%; }
+  bottom: 0%;
+  text-decoration: none; }
 
 .pg-5-cta-btn-l {
   left: 0%;
-  padding-right: 0.1em; }
+  padding-right: 0.1em;
+  background-color: #fbab3c;
+  opacity: 0.89; }
 
-.pg-5-cta-btn-l-img {
+.pg-5-cta-btn-l-txt {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; }
 
 .pg-5-cta-btn-r {
   right: 0%;
-  padding-left: 0.1em; }
+  padding-left: 0.1em;
+  background-color: #fbab3c;
+  opacity: 0.89; }
 
-.pg-5-cta-btn-r-img {
+.pg-5-cta-btn-r-txt {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; }
+
+.pg-5-cta-sm-txt {
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #9d7a40;
+  position: relative;
+  bottom: -1.15rem; }
+
+.pg-5-cta-lg-txt {
+  font-size: 1.95rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: relative;
+  bottom: -1.2rem; }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .pg-5-bacrnd-img {

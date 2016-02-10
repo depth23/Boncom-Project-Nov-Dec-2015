@@ -1166,7 +1166,6 @@ html, body {
   background-image: url(../img/photo-by-Dustin-Scarpitti.jpg);
   background-size: cover;
   background-position: top right;
-//  max-width: 1440px;
 }
 
 .pg-2-lg-txt-wrap {
@@ -1187,17 +1186,34 @@ html, body {
   transform: skew(-1deg, -5deg);
 }
 
-//.pg-2-txt-img {
-//  height: 100%;
-//  width: 100%;
-//}
-
 .pg-2-watch-btn {
   height: 4.4rem;
   width: 11.6rem;
   position: absolute;
   top: 49.6%;
   left: 22%;
+  background-color: rgb(34, 226, 255);
+}
+
+.pg-2-watch-btn-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.63rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-bottom: 0.63rem solid transparent;
+  position: absolute;
+  top: 1.6rem;
+  left: 2.15rem;
+}
+
+.pg-2-watch-btn-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 1.1rem;
+  right: 2.4rem;
 }
 
 .pg-2-title {
@@ -1548,7 +1564,7 @@ html, body {
   color: white;
   font-size: 1.8rem;
   border-radius: 50%;
-  line-height: 75%;
+  line-height: 50%;
   position: relative;
   top: 0.25rem;
 }
@@ -1728,7 +1744,6 @@ html, body {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(../img/photo-by-Brooke-Cagle.jpg);
   background-size: cover;
   background-position: top center;
-//  max-width: 1440px;
 }
 
 .pg-3-lg-txt-wrap {
@@ -1755,6 +1770,28 @@ html, body {
   position: absolute;
   top: 48.5%;
   left: 21.3%;
+  background-color: rgb(244, 179, 65);
+}
+
+.pg-3-watch-btn-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.63rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-bottom: 0.63rem solid transparent;
+  position: absolute;
+  top: 1.6rem;
+  left: 2.2rem;
+}
+
+.pg-3-watch-btn-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 1.1rem;
+  right: 2.5rem;
 }
 
 .pg-3-title {
@@ -1952,6 +1989,28 @@ html, body {
   position: absolute;
   top: 48%;
   left: 23.5%;
+  background-color: rgb(241, 100, 40);
+}
+
+.pg-4-watch-btn-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.63rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-bottom: 0.63rem solid transparent;
+  position: absolute;
+  top: 1.62rem;
+  left: 2.3rem;
+}
+
+.pg-4-watch-btn-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 1.1rem;
+  right: 2.5rem;
 }
 
 .pg-4-title {
@@ -2149,6 +2208,28 @@ html, body {
   position: absolute;
   top: 39%;
   left: 25.5%;
+  background-color: rgb(251, 185, 67);
+}
+
+.pg-5-watch-btn-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.63rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-bottom: 0.63rem solid transparent;
+  position: absolute;
+  top: 1.55rem;
+  left: 2.34rem;
+}
+
+.pg-5-watch-btn-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 1.02rem;
+  right: 2.45rem;
 }
 
 .pg-5-title {
@@ -2186,31 +2267,60 @@ html, body {
 
 .pg-5-cta-btns {
   height: 100%;
-  width: 50%;
+  width: 49.75%;
   position: absolute;
   bottom: 0%;
+  text-decoration: none;
 }
 
 .pg-5-cta-btn-l {
   @extend .pg-5-cta-btns;
   left: 0%;
   padding-right: 0.1em;
+  background-color: rgb(251, 171, 60);
+  opacity: 0.89;
 }
 
-.pg-5-cta-btn-l-img {
+.pg-5-cta-btn-l-txt {
   height: 100%;
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 .pg-5-cta-btn-r {
   @extend .pg-5-cta-btns;
   right: 0%;
   padding-left: 0.1em;
+  background-color: rgb(251, 171, 60);
+  opacity: 0.89;
 }
 
-.pg-5-cta-btn-r-img {
+.pg-5-cta-btn-r-txt {
   height: 100%;
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.pg-5-cta-sm-txt {
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: rgb(157, 122, 64);
+  position: relative;
+  bottom: -1.15rem;
+}
+
+.pg-5-cta-lg-txt {
+  font-size: 1.95rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: relative;
+  bottom: -1.2rem
 }
 
 @media #{$medium-only} {
