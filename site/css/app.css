@@ -131,7 +131,7 @@ html, body {
   display: inline-block;
   position: absolute;
   top: 54.7%;
-  left: 48.5%;
+  left: 48.48%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -148,12 +148,14 @@ html, body {
   margin: 0;
   position: relative;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%) rotate(-6deg);
-      -ms-transform: translate(-50%, 0%) rotate(-6deg);
-          transform: translate(-50%, 0%) rotate(-6deg); }
+  bottom: 2.25rem;
+  -webkit-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+      -ms-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+          transform: translate(-50%, 0%) skew(-1deg, -5deg); }
 
 .pg-1-title-sm {
   font-size: 2.5rem;
+  font-weight: 900;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -168,43 +170,43 @@ html, body {
 
 .pg-1-title-bottom-border-container {
   height: 1rem;
-  width: 10.5rem;
-  -webkit-transform: translate(-50%, 0%) rotate(-6deg);
-      -ms-transform: translate(-50%, 0%) rotate(-6deg);
-          transform: translate(-50%, 0%) rotate(-6deg);
+  width: 8.5rem;
   position: relative;
-  left: 50%;
-  bottom: 1.3em; }
+  left: 49.5%;
+  bottom: 3rem;
+  -webkit-transform: translate(-50%, 0%) rotate(-5deg);
+      -ms-transform: translate(-50%, 0%) rotate(-5deg);
+          transform: translate(-50%, 0%) rotate(-5deg); }
 
 .pg-1-title-bottom-border-top-line {
-  width: 10.5em;
+  width: 10em;
   border-bottom: 0.18em solid white;
   margin: 0;
   padding: 0;
   position: relative;
-  right: 20%;
-  top: 14%; }
+  right: 32%;
+  top: 6%; }
 
 .pg-1-title-bottom-border-middle {
-  height: 0.45em;
+  height: 0.3em;
   width: 6.5em;
   border-right: 0.18em solid white;
   border-left: 0.18em solid white;
   margin: 0;
   padding: 0;
   position: relative;
-  left: 50%;
+  left: 47%;
   -webkit-transform: translate(-50%, 0%);
       -ms-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%); }
 
 .pg-1-title-bottom-border-bottom-line {
-  width: 10.5rem;
+  width: 10rem;
   border-top: 0.18em solid white;
   margin: 0;
   padding: 0;
   position: relative;
-  left: 19%;
+  left: 9%;
   bottom: 14%; }
 
 .pg-1-text, .pg-1-text-2 {
@@ -312,11 +314,6 @@ html, body {
     left: 48.2%;
     line-height: normal;
     color: white; }
-  .pg-1-title {
-    height: 7rem;
-    width: 11rem;
-    margin-right: 4%;
-    margin-bottom: 6%; }
   .pg-1-text, .pg-1-text-2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.84375rem;
@@ -425,16 +422,31 @@ html, body {
     position: absolute;
     top: 56%;
     left: 50%;
-    -webkit-transform: translate(-59.5%, -50%);
-        -ms-transform: translate(-59.5%, -50%);
-            transform: translate(-59.5%, -50%);
+    -webkit-transform: translate(-59.25%, -50%);
+        -ms-transform: translate(-59.25%, -50%);
+            transform: translate(-59.25%, -50%);
     line-height: normal;
     color: white; }
   .pg-1-title {
-    height: 6rem;
-    width: 9rem;
-    margin-right: 5%;
-    margin-bottom: 10%; }
+    line-height: 155%;
+    bottom: 0rem; }
+  .pg-1-title-sm {
+    font-size: 1.75rem;
+    right: 12rem;
+    top: 0.7rem; }
+  .pg-1-title-lg {
+    font-size: 3.5rem; }
+  .pg-1-title-bottom-border-container {
+    bottom: 2rem; }
+  .pg-1-title-bottom-border-top-line {
+    width: 7rem;
+    right: 8%; }
+  .pg-1-title-bottom-border-middle {
+    width: 4.5rem;
+    left: 48%; }
+  .pg-1-title-bottom-border-bottom-line {
+    width: 7rem;
+    left: 22%; }
   .pg-1-text, .pg-1-text-2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.75rem;
@@ -468,16 +480,23 @@ html, body {
   background-size: cover;
   background-position: top right; }
 
-.pg-2-txt-img-wrap {
+.pg-2-lg-txt-wrap {
   height: 16.2rem;
-  width: 24.7rem;
+  width: 26.3rem;
   position: absolute;
-  top: 16%;
-  left: 8%; }
+  top: 17%;
+  left: 8%;
+  color: white;
+  text-align: center; }
 
-.pg-2-txt-img {
-  height: 100%;
-  width: 100%; }
+.pg-2-lg-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 100%;
+  -webkit-transform: skew(-1deg, -5deg);
+      -ms-transform: skew(-1deg, -5deg);
+          transform: skew(-1deg, -5deg); }
 
 .pg-2-watch-btn {
   height: 4.4rem;
@@ -512,6 +531,15 @@ html, body {
 .pg-2-mobile-text {
   display: none; }
 
+.pg-2-cta-btn {
+  background-color: #22e2ff; }
+
+.pg-2-cta-txt {
+  color: black; }
+
+.pg-2-cta-arrow {
+  background-color: black; }
+
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .pg-2-bacrnd-img {
     height: 100%;
@@ -522,7 +550,7 @@ html, body {
     background-image: url(../img/photo-by-Dustin-Scarpitti.jpg);
     background-size: cover;
     background-position: top right; }
-  .pg-2-txt-img-wrap {
+  .pg-2-lg-txt-wrap {
     height: 11.6rem;
     width: 17.8rem;
     position: absolute;
@@ -572,7 +600,7 @@ html, body {
     position: absolute;
     top: 44%;
     left: 0%; }
-  .pg-2-txt-img-wrap {
+  .pg-2-lg-txt-wrap {
     height: 10.5rem;
     width: 14rem;
     position: absolute;
@@ -619,22 +647,89 @@ html, body {
   position: relative;
   border: 2.3em solid white; }
 
-.pgs-2-5-fol-him-container {
+.pgs-2-5-sm-title-container {
   height: 6em;
   width: 9em;
   position: absolute;
   top: 4%;
   right: 2.5%; }
 
-.pgs-2-5-fol-him-img {
-  height: 100%;
-  width: 100%; }
+.pgs-2-5-sm-title {
+  height: 9rem;
+  width: 15rem;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 77%;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+      -ms-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+          transform: translate(-50%, 0%) skew(-1deg, -5deg); }
+
+.pgs-2-5-sm-title-sm {
+  font-size: 1.5625rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 11.3rem;
+  top: 0.6rem; }
+
+.pgs-2-5-sm-title-lg {
+  font-size: 3rem;
+  letter-spacing: -0.3rem;
+  margin: 0;
+  padding: 0; }
+
+.pgs-2-5-sm-title-bottom-border-container {
+  height: 1rem;
+  width: 8.5rem;
+  position: relative;
+  left: 49.5%;
+  bottom: 3.8rem;
+  -webkit-transform: translate(-50%, 0%) rotate(-5deg);
+      -ms-transform: translate(-50%, 0%) rotate(-5deg);
+          transform: translate(-50%, 0%) rotate(-5deg); }
+
+.pgs-2-5-sm-title-bottom-border-top-line {
+  width: 6.24em;
+  border-bottom: 0.18em solid white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 0%;
+  top: 6%; }
+
+.pgs-2-5-sm-title-bottom-border-middle {
+  height: 0.25em;
+  width: 4em;
+  border-right: 0.18em solid white;
+  border-left: 0.18em solid white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%); }
+
+.pgs-2-5-sm-title-bottom-border-bottom-line {
+  width: 6.24rem;
+  border-top: 0.18em solid white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 27.5%;
+  bottom: 14%; }
 
 .pg-2-5-txt-container {
   height: 51rem;
   width: 45rem;
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   left: 3rem; }
 
 @media screen and (max-height: 545px) and (max-width: 321px) {
@@ -679,9 +774,29 @@ html, body {
   bottom: 0;
   right: 0; }
 
-.pgs-2-5-cta-btn {
+.pgs-2-5-cta-link {
+  text-decoration: none; }
+
+.pgs-2-4-cta-btn {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  opacity: 0.8; }
+
+.pgs-2-4-cta-btn-text {
+  line-height: 350%;
+  position: relative;
+  left: 1.6rem; }
+
+.fa-chevron-circle-up {
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  line-height: 75%;
+  position: relative;
+  top: 0.25rem; }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .side-nav-arrow {
@@ -693,7 +808,7 @@ html, body {
   .pgs-2-5-nav-arrow-img {
     height: 1.77406rem;
     width: 0.91569rem; }
-  .pgs-2-5-fol-him-container {
+  .pgs-2-5-sm-title-container {
     height: 4.3em;
     width: 6.7em;
     position: absolute;
@@ -743,12 +858,8 @@ html, body {
     height: 1.77406rem;
     width: 0.91569rem;
     margin: 0em -0.6em 0em 0em; }
-  .pgs-2-5-fol-him-container {
-    height: 8%;
-    width: 20%;
-    position: absolute;
-    top: 5%;
-    right: 5%; }
+  .pgs-2-5-sm-title-container {
+    display: none; }
   .pg-2-5-txt-container {
     height: 27rem;
     width: 16.9rem;
@@ -761,7 +872,7 @@ html, body {
     position: absolute;
     bottom: 0;
     right: 0; }
-  .pgs-2-5-cta-btn {
+  .pgs-2-4-cta-btn {
     height: 100%;
     width: 100%; } }
 
@@ -815,16 +926,23 @@ html, body {
   background-size: cover;
   background-position: top center; }
 
-.pg-3-txt-img-wrap {
+.pg-3-lg-txt-wrap {
   height: 17em;
   width: 27em;
   position: absolute;
-  top: 12.5%;
-  left: 6.1%; }
+  top: 14%;
+  left: 6.1%;
+  color: white;
+  text-align: center; }
 
-.pg-3-txt-img {
-  height: 100%;
-  width: 100%; }
+.pg-3-lg-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 100%;
+  -webkit-transform: skew(-1deg, -5deg);
+      -ms-transform: skew(-1deg, -5deg);
+          transform: skew(-1deg, -5deg); }
 
 .pg-3-watch-btn {
   height: 4.4em;
@@ -856,6 +974,15 @@ html, body {
 .pg-3-mobile-text {
   display: none; }
 
+.pg-3-cta-btn {
+  background-color: #f4b341; }
+
+.pg-3-cta-txt {
+  color: #4c4539; }
+
+.pg-3-cta-arrow {
+  background-color: #4c4539; }
+
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .pg-3-bacrnd-img {
     height: 100%;
@@ -866,7 +993,7 @@ html, body {
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.2)), url(../img/photo-by-Brooke-Cagle.jpg);
     background-size: cover;
     background-position: top center; }
-  .pg-3-txt-img-wrap {
+  .pg-3-lg-txt-wrap {
     height: 11.5em;
     width: 17.3em;
     position: absolute;
@@ -914,7 +1041,7 @@ html, body {
     position: absolute;
     top: 40.8%;
     left: 0%; }
-  .pg-3-txt-img-wrap {
+  .pg-3-lg-txt-wrap {
     height: 32%;
     width: 87%;
     position: absolute;
@@ -958,16 +1085,23 @@ html, body {
   background-size: cover;
   background-position: center right; }
 
-.pg-4-txt-img-wrap {
+.pg-4-lg-txt-wrap {
   height: 17.9rem;
-  width: 26.5rem;
+  width: 31rem;
   position: absolute;
-  top: 11%;
-  left: 7.8%; }
+  top: 12.5%;
+  left: 7.8%;
+  color: white;
+  text-align: center; }
 
-.pg-4-txt-img {
-  height: 100%;
-  width: 100%; }
+.pg-4-lg-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 100%;
+  -webkit-transform: skew(-1deg, -5deg);
+      -ms-transform: skew(-1deg, -5deg);
+          transform: skew(-1deg, -5deg); }
 
 .pg-4-watch-btn {
   height: 4.4rem;
@@ -999,6 +1133,15 @@ html, body {
 .pg-4-mobile-text {
   display: none; }
 
+.pg-4-cta-btn {
+  background-color: #f16428; }
+
+.pg-4-cta-txt {
+  color: white; }
+
+.pg-4-cta-arrow {
+  background-color: black; }
+
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .pg-4-bacrnd-img {
     height: 100%;
@@ -1009,7 +1152,7 @@ html, body {
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.25)), url(../img/photo-by-Elijah-Hail.jpg);
     background-size: cover;
     background-position: center right; }
-  .pg-4-txt-img-wrap {
+  .pg-4-lg-txt-wrap {
     height: 11.5em;
     width: 18.9em;
     position: absolute;
@@ -1057,7 +1200,7 @@ html, body {
     position: absolute;
     top: 40.8%;
     left: 0%; }
-  .pg-4-txt-img-wrap {
+  .pg-4-lg-txt-wrap {
     height: 32%;
     width: 87%;
     position: absolute;
@@ -1101,16 +1244,23 @@ html, body {
   background-size: cover;
   background-position: center center; }
 
-.pg-5-txt-img-wrap {
+.pg-5-lg-txt-wrap {
   height: 14.5rem;
-  width: 25rem;
+  width: 26rem;
   position: absolute;
   top: 9%;
-  left: 12.6%; }
+  left: 12.6%;
+  color: white;
+  text-align: center; }
 
-.pg-5-txt-img {
-  height: 100%;
-  width: 100%; }
+.pg-5-lg-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 100%;
+  -webkit-transform: skew(-1deg, -5deg);
+      -ms-transform: skew(-1deg, -5deg);
+          transform: skew(-1deg, -5deg); }
 
 .pg-5-watch-btn {
   height: 4.4rem;
@@ -1180,7 +1330,7 @@ html, body {
     background-image: url(../img/photo-by-Julia-Caesar.jpg);
     background-size: cover;
     background-position: center center; }
-  .pg-5-txt-img-wrap {
+  .pg-5-lg-txt-wrap {
     height: 10.25em;
     width: 18em;
     position: absolute;
@@ -1233,7 +1383,7 @@ html, body {
     position: absolute;
     top: 40.8%;
     left: 0%; }
-  .pg-5-txt-img-wrap {
+  .pg-5-lg-txt-wrap {
     height: 32%;
     width: 87%;
     position: absolute;
@@ -1305,15 +1455,75 @@ html, body {
   color: white; }
 
 .pg-6-title {
-  height: 8rem;
-  width: 12.25rem;
+  height: 9rem;
+  width: 15rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 95%;
+  margin: 0;
   position: relative;
-  top: 54%;
-  left: 50.2%;
-  -webkit-transform: translate(-50%, 5%);
-      -ms-transform: translate(-50%, 5%);
-          transform: translate(-50%, 5%);
-  margin-bottom: 3%; }
+  left: 50%;
+  bottom: 2.25rem;
+  -webkit-transform: translate(-50%, 0%) skew(-1deg, -6deg);
+      -ms-transform: translate(-50%, 0%) skew(-1deg, -6deg);
+          transform: translate(-50%, 0%) skew(-1deg, -6deg); }
+
+.pg-6-title-sm {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 12.9rem;
+  top: 0.71rem; }
+
+.pg-6-title-lg {
+  font-size: 4rem;
+  letter-spacing: -0.3rem;
+  margin: 0;
+  padding: 0; }
+
+.pg-6-title-bottom-border-container {
+  height: 1rem;
+  width: 8.5rem;
+  position: relative;
+  left: 49.5%;
+  bottom: 4rem;
+  -webkit-transform: translate(-50%, 0%) rotate(-6deg);
+      -ms-transform: translate(-50%, 0%) rotate(-6deg);
+          transform: translate(-50%, 0%) rotate(-6deg); }
+
+.pg-6-title-bottom-border-top-line {
+  width: 8rem;
+  border-bottom: 0.18em solid white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 15%;
+  top: 14%; }
+
+.pg-6-title-bottom-border-middle {
+  height: 0.4em;
+  width: 5em;
+  border-right: 0.18em solid white;
+  border-left: 0.18em solid white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%); }
+
+.pg-6-title-bottom-border-bottom-line {
+  width: 8rem;
+  border-top: 0.18em solid white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 21%;
+  bottom: 14%; }
 
 .pg-6-txt {
   font-family: 'Open Sans', sans-serif;
@@ -1536,9 +1746,26 @@ html, body {
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .pg-6-title {
-    height: 20.7%;
-    width: 35.3%;
-    margin-bottom: 14%; }
+    width: 11rem;
+    line-height: 120%;
+    bottom: 0rem; }
+  .pg-6-title-sm {
+    font-size: 1.75rem;
+    right: 10rem;
+    top: 0.65rem; }
+  .pg-6-title-lg {
+    font-size: 3.5rem; }
+  .pg-6-title-bottom-border-container {
+    bottom: 2.5rem; }
+  .pg-6-title-bottom-border-top-line {
+    width: 7rem;
+    right: 8%; }
+  .pg-6-title-bottom-border-middle {
+    width: 4.5em;
+    left: 49%; }
+  .pg-6-title-bottom-border-bottom-line {
+    width: 7rem;
+    left: 23%; }
   .pg-6-txt {
     max-width: 87%;
     font-family: 'Open Sans', sans-serif;
@@ -1573,7 +1800,7 @@ html, body {
     line-height: 121%;
     display: inline-block;
     position: absolute;
-    bottom: -17.5%;
+    bottom: -30.5%;
     left: 0%; }
   .pg-6-cta-btn {
     height: 2.375rem;
