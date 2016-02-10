@@ -1081,7 +1081,7 @@ html, body {
     font-weight: 600; } }
 
 .pg-4-bacrnd-img {
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.25)), url(../img/photo-by-Elijah-Hail.jpg);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.29)), url(../img/photo-by-Elijah-Hail.jpg);
   background-size: cover;
   background-position: center right; }
 
@@ -1240,7 +1240,7 @@ html, body {
     font-weight: 600; } }
 
 .pg-5-bacrnd-img {
-  background-image: url(../img/photo-by-Julia-Caesar.jpg);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.25)), url(../img/photo-by-Julia-Caesar.jpg);
   background-size: cover;
   background-position: center center; }
 
