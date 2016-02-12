@@ -1319,9 +1319,23 @@ html, body {
   .pg-2-watch-btn {
     height: rem-calc(45);
     width: rem-calc(125);
-    position: absolute;
     top: 49%;
     left: 21.8%;
+  }
+  
+  .pg-2-watch-btn-arrow {
+    border-top: 0.44rem solid transparent;
+    border-left: 0.84rem solid black;
+    border-bottom: 0.44rem solid transparent;
+    top: 0.97rem;
+    left: 1.55rem;
+  }
+
+  .pg-2-watch-btn-txt {
+    font-size: 1rem;
+    letter-spacing: -0.039rem;
+    top: 0.65rem;
+    right: 1.61rem;
   }
 
   .pg-2-title {
@@ -1896,9 +1910,24 @@ html, body {
   .pg-3-watch-btn {
     height: rem-calc(45);
     width: rem-calc(125);
-    position: absolute;
+//    position: absolute;
     top: 50%;
     left: 24%;
+  }
+  
+  .pg-3-watch-btn-arrow {
+    border-top: 0.44rem solid transparent;
+    border-left: 0.84rem solid black;
+    border-bottom: 0.44rem solid transparent;
+    top: 0.97rem;
+    left: 1.5rem;
+  }
+
+  .pg-3-watch-btn-txt {
+    font-size: 1rem;
+    letter-spacing: -0.04rem;
+    top: 0.65rem;
+    right: 1.65rem;
   }
 
   .pg-3-title {
@@ -2121,6 +2150,21 @@ html, body {
     position: absolute;
     top: 48.5%;
     left: 21%;
+  }
+  
+  .pg-4-watch-btn-arrow {
+    border-top: 0.44rem solid transparent;
+    border-left: 0.84rem solid black;
+    border-bottom: 0.44rem solid transparent;
+    top: 0.95rem;
+    left: 1.5rem;
+  }
+
+  .pg-4-watch-btn-txt {
+    font-size: 1rem;
+    letter-spacing: -0.039rem;
+    top: 0.6rem;
+    right: 1.61rem;
   }
 
   .pg-4-title {
@@ -2396,6 +2440,21 @@ html, body {
     position: absolute;
     top: 44%;
     left: 28%;
+  }
+  
+  .pg-5-watch-btn-arrow {
+    border-top: 0.44rem solid transparent;
+    border-left: 0.84rem solid black;
+    border-bottom: 0.44rem solid transparent;
+    top: 0.96rem;
+    left: 1.5rem;
+  }
+
+  .pg-5-watch-btn-txt {
+    font-size: 1rem;
+    letter-spacing: -0.039rem;
+    top: 0.6rem;
+    right: 1.67rem;
   }
 
   .pg-5-title {
