@@ -1278,7 +1278,7 @@ html, body {
 
 .pg-2-mobile-text {
     display: none;
-  }
+}
 
 .pg-2-cta-btn {
   background-color: rgb(34, 226, 255);
@@ -1292,6 +1292,10 @@ html, body {
   background-color: black;
 }
 
+.pg-2-chat-box-button {
+  background-color: rgb(34, 226, 255);
+}
+
 @media #{$medium-only} {
   
   .pg-2-bacrnd-img {
@@ -1299,7 +1303,7 @@ html, body {
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
-    border: 1.5em solid white; 
+    border: 1.5rem solid white !important; 
     background-image: url(../img/photo-by-Dustin-Scarpitti.jpg);
     background-size: cover;
     background-position: top right;
@@ -1606,9 +1610,9 @@ html, body {
 
 .pgs-2-4-cta-btn-text {
   line-height: 350%;
-//  color: rgb(98, 91, 68);
   position: relative;
-  left: 1.6rem;
+  left: -1.75;
+//  was left: 1.6rem;
 }
 
 .fa-chevron-circle-up {
@@ -1620,6 +1624,69 @@ html, body {
   top: 0.25rem;
 }
 
+.pgs-2-4-chat-box {
+  width: 26rem;
+  height: 20.5rem;
+  position: absolute;
+  bottom: -20.5rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(230, 230, 230);
+  z-index: -10000;
+}
+
+.pgs-2-4-chat-box-title {
+  font-size: 1.9rem;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 1.5rem;
+}
+
+.pgs-2-4-chat-box-content {
+  width: 85%;
+  height: 11rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-bottom: 0;
+}
+
+.pgs-2-4-chat-box-text {
+  height: 55%;
+  width: 100%;
+  text-align: justify;
+  line-height: 160%;
+  font-weight: 400;
+  font-size: 0.96rem;
+}
+
+.pgs-2-4-chat-box-input {
+  width: 100%;
+  height: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  border: none;
+  padding-left: 1rem;
+  color: rgb(143, 143, 143);
+}
+
+.pgs-2-4-chat-box-button {
+  width: 12rem;
+  height: 3.5rem;
+  position: relative;
+  top: 0.2rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.pgs-2-4-chat-box-button-text {
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%); 
+}
+  
 @media #{$medium-only} {
 
   .side-nav-arrow {
@@ -1648,6 +1715,121 @@ html, body {
     width: 30rem;
     position: absolute;
     left: 2rem;
+  }
+  
+  .pgs-2-4-cta-btn {
+    font-size: 0.9rem;
+  }
+
+  .pgs-2-4-cta-btn-text {
+    line-height: 350%;
+    left: -1.75rem;
+  }
+
+  .fa-chevron-circle-up {
+    line-height: 50%;
+  }
+  
+  .pgs-2-4-chat-box {
+    position: absolute;
+    bottom: -20.5rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(230, 230, 230);
+    z-index: -10000;
+    width: 26rem;
+    height: 20.5rem;
+  }
+
+  .pgs-2-4-chat-box-title {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1.5rem;
+    font-size: 1.9rem;
+  }
+
+  .pgs-2-4-chat-box-content {
+    height: 11rem;
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: 0;
+  }
+
+  .pgs-2-4-chat-box-text {
+    width: 100%;
+    text-align: justify;
+    line-height: 160%;
+    font-weight: 400;
+    font-size: 0.96rem;
+    height: 55%;
+  }
+
+  .pgs-2-4-chat-box-input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    padding-left: 1rem;
+    color: rgb(143, 143, 143);
+  }
+
+  .pgs-2-4-chat-box-button {
+    width: 12rem;
+    height: 3.5rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 0.2rem;
+  }
+  
+  .pgs-2-4-btm-rt-link {
+    text-decoration: none;
+  }
+    
+  .pgs-2-4-btm-rt-corner {
+    width: 0;
+    height: 0;
+    border-bottom: 7rem solid white;
+    border-left: 7rem solid transparent;
+    position: absolute;
+    bottom: -0.05rem;
+    right: -0.05rem;
+    text-align: right;
+    z-index: 10000;
+  }
+  
+  .pgs-2-4-btm-rt-arrow {
+    height: 1.5rem;
+    background-color: rgb(241, 90, 36);
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    position: absolute;
+    right: -0.7rem;
+    bottom: -4.4rem;
+  }
+  
+  .fa-chevron-circle-right {
+    font-size: 1.47rem;
+    color: white;
+    position: relative;
+    top: 0.0196rem;
+    right: 0rem;
+  }
+  
+  .pgs-2-4-btm-rt-txt {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 102%;
+    width: 7.2rem;
+    position: absolute;
+    right: -0.9rem;
+    bottom: -7.6rem;
+    color: black;
   }
   
   @media screen and (max-height: 610px) and (max-width: 1023px) and (min-width: 641px) {
@@ -1881,6 +2063,10 @@ html, body {
 
 .pg-3-cta-arrow {
   background-color: rgb(76, 69, 57);
+}
+
+.pg-3-chat-box-button {
+  background-color: rgb(244, 179, 65);
 }
 
 @media #{$medium-only} {
@@ -2118,6 +2304,10 @@ html, body {
 
 .pg-4-cta-arrow {
   background-color: black;
+}
+
+.pg-4-chat-box-button {
+  background-color: rgb(241, 100, 40);
 }
 
 @media #{$medium-only} {
