@@ -2200,9 +2200,42 @@ html, body {
   margin: 0 auto; }
 
 .background-img {
-  background: url("../img/Self-Worth_Background.png") no-repeat center center;
+  background: url("../img/photo-by-Dustin-Scarpitti.jpg") no-repeat center center;
   -webkit-background-size: cover;
+  background: transparent;
   padding-top: .89%; }
+
+.background-img-container {
+  width: 100vw;
+  height: 52rem;
+  position: absolute;
+  top: 0;
+  z-index: -10000;
+  overflow: hidden; }
+
+.background-image {
+  width: 103vw;
+  max-width: 103vw;
+  height: 102%;
+  -webkit-filter: blur(0.7rem);
+  position: relative;
+  right: 0.8rem; }
+
+.blue-background-img {
+  background: url("../img/photo-by-Dustin-Scarpitti.jpg") no-repeat center center;
+  background-size: cover; }
+
+.yellow-1-background-img {
+  background: url("../img/photo-by-Brooke-Cagle.jpg") no-repeat center center;
+  background-size: cover; }
+
+.orange-background-img {
+  background: url("../img/photo-by-Elijah-Hail.jpg") no-repeat center center;
+  background-size: cover; }
+
+.yellow-2-background-img {
+  background: url("../img/photo-by-Julia-Caesar.jpg") no-repeat center center;
+  background-size: cover; }
 
 .orange-arrow-button {
   width: 6.5%;
@@ -2313,7 +2346,10 @@ html, body {
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .self-worth_container {
-    max-width: 640px; }
+    max-width: 640px;
+    height: 33.8rem; }
+  .background-img-container {
+    height: 33.8rem; }
   .orange-arrow-button {
     width: 6%;
     position: relative;
@@ -2327,14 +2363,14 @@ html, body {
     position: relative;
     right: 1.2em; }
   .discover-more-orange_p {
-    font-size: 20px;
-    margin-left: 21%; }
+    font-size: 16px;
+    margin-left: 20%; }
   .discover-more-blue_p {
     font-size: 16px;
-    margin-left: 21%; }
+    margin-left: 20%; }
   .discover-more-yellow_p {
     font-size: 16px;
-    margin-left: 21%; }
+    margin-left: 20%; }
   .self-worth-video {
     padding-bottom: 52.2% !important; }
   .cta-discover {
