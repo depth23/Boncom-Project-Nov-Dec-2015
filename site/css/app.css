@@ -2623,7 +2623,7 @@ html, body {
     height: inherit;
     float: none; } }
 
-.request-bible-container {
+.request-1-container {
   border-left: 2px solid #CCCCCC;
   border-right: 2px solid #CCCCCC;
   max-width: 1024px;
@@ -2649,7 +2649,7 @@ html, body {
   display: block;
   float: left; }
 
-.bible-link {
+.request-1-link {
   text-decoration: none;
   height: 100%;
   width: 30%; }
@@ -2661,18 +2661,10 @@ html, body {
   color: black;
   margin-top: 1.2em; }
 
-.bible_follow-him {
+.request-1_primis-leo {
   margin-top: 3.5%; }
 
-.follow-him_2 {
-  display: block;
-  margin: 0 auto;
-  max-width: 45%;
-  position: relative;
-  bottom: .1em;
-  right: .1em; }
-
-.bible_free-copy {
+.request-1_free-copy {
   font-weight: 200;
   font-size: 2em;
   font-family: 'Open Sans', sans-serif;
@@ -2680,9 +2672,9 @@ html, body {
   margin: 0 auto;
   margin-top: 4%; }
 
-.bible_paragraph {
+.request-1_paragraph {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: 1.01em;
   margin: 0 auto;
   margin-top: 1.5%; }
 
@@ -2742,7 +2734,7 @@ html, body {
   margin: 0 auto;
   margin-top: 2%; }
 
-.request-bible-video {
+.request-1-video {
   margin: 0 auto; }
 
 .foot_closing-wrapper {
@@ -2769,7 +2761,7 @@ html, body {
   margin-left: 1%; }
 
 @media screen and (min-width: 64em) {
-  .request-bible-video {
+  .request-1-video {
     padding-bottom: 34.5% !important; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -2789,10 +2781,10 @@ html, body {
     font-size: 18px; }
   .foot_orange-right-arrow {
     margin-left: .5em; }
-  .request-bible-video {
+  .request-1-video {
     margin-left: 5%;
     margin-right: 5%; }
-  .request-bible-video {
+  .request-1-video {
     padding-bottom: 34.5% !important; } }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
@@ -2809,15 +2801,11 @@ html, body {
     font-size: 14px;
     color: black;
     margin-top: .8em; }
-  .follow-him_2 {
-    max-width: 55%;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em; }
-  .bible_free-copy {
+  .request-1_free-copy {
     margin-top: 0;
     font-size: 1.5em;
     max-width: 86%; }
-  .bible_paragraph {
+  .request-1_paragraph {
     font-size: .75em;
     margin-top: 4.5%;
     margin-right: 5%;
@@ -2874,7 +2862,7 @@ html, body {
     max-width: 5%;
     float: left;
     margin-left: .4em; }
-  .request-bible-video {
+  .request-1-video {
     margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 44.5% !important;
