@@ -2352,16 +2352,8 @@ html, body {
   background: url("../img/photo-by-Dustin-Scarpitti.jpg") no-repeat center center;
   background-size: cover; }
 
-.yellow-1-background-img {
-  background: url("../img/photo-by-Brooke-Cagle.jpg") no-repeat center center;
-  background-size: cover; }
-
 .orange-background-img {
   background: url("../img/photo-by-Elijah-Hail.jpg") no-repeat center center;
-  background-size: cover; }
-
-.yellow-2-background-img {
-  background: url("../img/photo-by-Julia-Caesar.jpg") no-repeat center center;
   background-size: cover; }
 
 .orange-arrow-button {
@@ -2417,12 +2409,77 @@ html, body {
   margin-top: 6.5%;
   margin-bottom: 6.5%; }
 
-.follow-him_self-worth {
-  max-width: 24%;
-  margin: 0 auto;
-  margin-top: 3.3%;
-  margin-bottom: 1%;
-  display: block; }
+.blue-title {
+  height: 7rem;
+  width: 23rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 95%;
+  margin: 3.3% 0 0 0;
+  position: relative;
+  left: 50.7%;
+  bottom: 0rem;
+  -webkit-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+      -ms-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+          transform: translate(-50%, 0%) skew(-1deg, -5deg); }
+
+.blue-title-sm {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 18.8rem;
+  top: 0.48rem; }
+
+.blue-title-lg {
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
+  margin: 0;
+  padding: 0; }
+
+.blue-title-sm-bold {
+  font-size: 1.91rem; }
+
+.blue-title-sm-normal {
+  font-weight: 400; }
+
+.orange-title {
+  height: 7rem;
+  width: 23rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 95%;
+  margin: 3.3% 0 0 0;
+  position: relative;
+  left: 50.7%;
+  bottom: 0rem;
+  -webkit-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+      -ms-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+          transform: translate(-50%, 0%) skew(-1deg, -5deg); }
+
+.orange-title-sm {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 19.1rem;
+  top: 0.48rem; }
+
+.orange-title-lg {
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
+  margin: 0;
+  padding: 0; }
+
+.orange-title-sm-bold {
+  font-size: 1.91rem; }
+
+.orange-title-sm-normal {
+  font-weight: 400; }
 
 .discover-more-orange_p {
   color: #F15A24;
@@ -2434,13 +2491,65 @@ html, body {
 
 .orange-right-arrow_container {
   max-width: 100%;
-  margin-left: 4%; }
+  margin-left: 2%; }
 
 .orange-right-arrow {
   max-width: 70%;
   display: inline-block;
   padding-top: 2%;
   margin-left: -130%; }
+
+.yellow-1-background-img {
+  background: url("../img/photo-by-Brooke-Cagle.jpg") no-repeat center center;
+  background-size: cover; }
+
+.discover-more-yellow_p {
+  color: #FBB03B;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  float: left;
+  font-size: 23px;
+  letter-spacing: 0.021em; }
+
+.yellow-1-title {
+  height: 7rem;
+  width: 23rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 95%;
+  margin: 3.3% 0 0 0;
+  position: relative;
+  left: 50.7%;
+  bottom: 0rem;
+  -webkit-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+      -ms-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+          transform: translate(-50%, 0%) skew(-1deg, -5deg); }
+
+.yellow-1-title-sm {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 19.1rem;
+  top: 0.48rem; }
+
+.yellow-1-title-lg {
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
+  margin: 0;
+  padding: 0; }
+
+.yellow-1-title-sm-bold {
+  font-size: 1.91rem; }
+
+.yellow-1-title-sm-normal {
+  font-weight: 400; }
+
+.yellow-2-background-img {
+  background: url("../img/photo-by-Julia-Caesar.jpg") no-repeat center center;
+  background-size: cover; }
 
 .love-back-link {
   height: 100%;
@@ -2459,13 +2568,41 @@ html, body {
   margin-top: -2.5%;
   margin-bottom: 1%; }
 
-.discover-more-yellow_p {
-  color: #FBB03B;
+.yellow-2-title {
+  height: 7rem;
+  width: 23rem;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  float: left;
-  font-size: 23px;
-  letter-spacing: 0.021em; }
+  font-weight: 700;
+  text-align: center;
+  line-height: 95%;
+  margin: 3.3% 0 0 0;
+  position: relative;
+  left: 50.7%;
+  bottom: 0rem;
+  -webkit-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+      -ms-transform: translate(-50%, 0%) skew(-1deg, -5deg);
+          transform: translate(-50%, 0%) skew(-1deg, -5deg); }
+
+.yellow-2-title-sm {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 19.1rem;
+  top: 0.48rem; }
+
+.yellow-2-title-lg {
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
+  margin: 0;
+  padding: 0; }
+
+.yellow-2-title-sm-bold {
+  font-size: 1.91rem; }
+
+.yellow-2-title-sm-normal {
+  font-weight: 400; }
 
 @media screen and (min-width: 64em) {
   .self-worth-video {
@@ -2554,6 +2691,8 @@ html, body {
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .background-img {
     padding-top: 0em; }
+  .background-img-container {
+    height: 24.3rem; }
   .orange-arrow-button {
     width: 9%;
     position: relative;
@@ -2575,12 +2714,54 @@ html, body {
   .self-worth_container {
     max-width: 23em;
     margin: 0 auto; }
-  .follow-him_self-worth {
-    max-width: 50%;
-    margin: 0 auto;
-    margin-top: 8%;
-    margin-bottom: 6%;
-    display: block; }
+  .blue-title {
+    height: 6rem;
+    width: 14rem;
+    left: 51.1%; }
+  .blue-title-sm {
+    font-size: 1.25rem;
+    right: 12.4rem;
+    top: 0.45rem; }
+  .blue-title-lg {
+    font-size: 2.3rem; }
+  .blue-title-sm-bold {
+    font-size: 1.42rem; }
+  .orange-title {
+    height: 6rem;
+    width: 14rem;
+    left: 51.1%; }
+  .orange-title-sm {
+    font-size: 1.25rem;
+    right: 12.65rem;
+    top: 0.45rem; }
+  .orange-title-lg {
+    font-size: 2.3rem; }
+  .orange-title-sm-bold {
+    font-size: 1.42rem; }
+  .yellow-1-title {
+    height: 6rem;
+    width: 14rem;
+    left: 51.1%; }
+  .yellow-1-title-sm {
+    font-size: 1.25rem;
+    right: 12.65rem;
+    top: 0.45rem; }
+  .yellow-1-title-lg {
+    font-size: 2.3rem; }
+  .yellow-1-title-sm-bold {
+    font-size: 1.42rem; }
+  .yellow-2-title {
+    height: 6rem;
+    width: 14rem;
+    left: 51.1%; }
+  .yellow-2-title-sm {
+    font-size: 1.25rem;
+    right: 12.65rem;
+    top: 0.45rem; }
+  .yellow-2-title-lg {
+    font-size: 2.3rem; }
+  .yellow-2-title-sm-bold {
+    font-size: 1.42rem; }
   .fourth-row_paragraph {
     font-size: 16px;
     padding-left: 1.5em;
