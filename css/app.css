@@ -2924,7 +2924,7 @@ html, body {
   margin: 0 auto;
   margin-top: 1.5%; }
 
-.vertical-line_first {
+.vertical-line-first {
   display: block;
   margin: 0 auto;
   margin-bottom: 1%; }
@@ -3062,7 +3062,7 @@ html, body {
     max-width: 80%;
     font-size: 1.3em;
     text-align: center; }
-  .vertical-line_first {
+  .vertical-line-first {
     max-width: .14em;
     margin-top: .5em; }
   .request-form {
@@ -3253,7 +3253,7 @@ html, body {
   margin: 0 auto;
   margin-top: 1.5%; }
 
-.vertical-line_first-bom {
+.vertical-line-first-bom {
   display: block;
   margin: 0 auto;
   margin-bottom: 1%; }
@@ -3412,7 +3412,7 @@ html, body {
     max-width: 80%;
     font-size: 1.3em;
     text-align: center; }
-  .vertical-line_first-bom {
+  .vertical-line-first-bom {
     max-width: .14em;
     margin-top: .5em; }
   .request-form-bom {
@@ -3493,7 +3493,7 @@ html, body {
     margin: 0 auto;
     display: block;
     max-width: 50%; }
-  .vertical-line_first-bom {
+  .vertical-line-first-bom {
     display: none; }
   .vertical-line_second-bom {
     display: none; }
