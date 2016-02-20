@@ -3553,9 +3553,51 @@ html, body {
 //   justify-content: center;
 // }
 
+.cta-discover-a {
+  text-decoration: none;
+}
+
 .cta-discover{
-  display: block;
-  margin: 0 auto;
+  height: 6.6rem;
+  width: 35rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: black;
+  top: 39.9rem;
+}
+
+.blue-cta-discover {
+  background-color: rgb(39, 220, 255);
+  color: black;
+}
+
+.blue-cta-discover-p {
+  color: rgb(48, 125, 138);
+}
+  
+.orange-cta-discover {
+  background-color: rgb(241, 90, 36);
+  color: white;
+}
+
+.orange-cta-discover-p {
+  color: rgb(117, 64, 45);
+}
+
+.cta-discover-p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  position: relative;
+  top: 1rem;
+  right: -0.2rem;
+}
+
+.cta-discover-h {
+  font-size: 2.15rem;
+  position: relative;
+  bottom: -0.7rem;
+  left: 0.2rem;
 }
 
 .cta-box{
@@ -3690,6 +3732,15 @@ html, body {
   background-size: cover;
 }
 
+.yellow-1-cta-discover {
+  background-color: rgb(251, 176, 59);
+  color: black;
+}
+
+.yellow-1-cta-discover-p {
+  color: rgb(96, 79, 53);
+}
+
 .discover-more-yellow_p{
   color: #FBB03B;
   font-family: 'Open Sans', sans-serif;
@@ -3743,6 +3794,15 @@ html, body {
 .yellow-2-background-img {
   background: url("../img/photo-by-Julia-Caesar.jpg") no-repeat center center;
   background-size: cover;
+}
+
+.yellow-2-cta-discover {
+  background-color: rgb(251, 176, 59);
+  color: black;
+}
+
+.yellow-2-cta-discover-p {
+  color: rgb(96, 79, 53);
 }
 
 .love-back-link {
@@ -3848,9 +3908,20 @@ html, body {
   .self-worth-video {
       padding-bottom: 52.2% !important;
   }
+  
   .cta-discover{
-  display: block;
-  margin: 0 auto;
+//  height: 6.6rem;
+    width: 21.5rem;
+  }
+
+  .cta-discover-p {
+    font-size: 0.8rem;
+    top: 1.4rem;
+  }
+
+  .cta-discover-h {
+    font-size: 1.25rem;
+    bottom: -1.7rem;
   }
 
   .cta-box{
@@ -3944,6 +4015,23 @@ html, body {
   .self-worth_container {
     max-width: 23em;
     margin: 0 auto;
+  }
+  
+  .cta-discover{
+    height: 6rem;
+    width: 18.15rem;
+  }
+
+  .cta-discover-p {
+    font-size: 0.75rem;
+    top: 1.7rem;
+    left: 0rem;
+  }
+
+  .cta-discover-h {
+    font-size: 1.2rem;
+    bottom: -1.5rem;
+    left: 0rem;
   }
   
   .blue-title {

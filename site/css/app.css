@@ -2382,9 +2382,44 @@ html, body {
 .second-row {
   padding-bottom: 5.5%; }
 
+.cta-discover-a {
+  text-decoration: none; }
+
 .cta-discover {
-  display: block;
-  margin: 0 auto; }
+  height: 6.6rem;
+  width: 35rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: black;
+  top: 39.9rem; }
+
+.blue-cta-discover {
+  background-color: #27dcff;
+  color: black; }
+
+.blue-cta-discover-p {
+  color: #307d8a; }
+
+.orange-cta-discover {
+  background-color: #f15a24;
+  color: white; }
+
+.orange-cta-discover-p {
+  color: #75402d; }
+
+.cta-discover-p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  position: relative;
+  top: 1rem;
+  right: -0.2rem; }
+
+.cta-discover-h {
+  font-size: 2.15rem;
+  position: relative;
+  bottom: -0.7rem;
+  left: 0.2rem; }
 
 .cta-box {
   width: 35em;
@@ -2503,6 +2538,13 @@ html, body {
   background: url("../img/photo-by-Brooke-Cagle.jpg") no-repeat center center;
   background-size: cover; }
 
+.yellow-1-cta-discover {
+  background-color: #fbb03b;
+  color: black; }
+
+.yellow-1-cta-discover-p {
+  color: #604f35; }
+
 .discover-more-yellow_p {
   color: #FBB03B;
   font-family: 'Open Sans', sans-serif;
@@ -2550,6 +2592,13 @@ html, body {
 .yellow-2-background-img {
   background: url("../img/photo-by-Julia-Caesar.jpg") no-repeat center center;
   background-size: cover; }
+
+.yellow-2-cta-discover {
+  background-color: #fbb03b;
+  color: black; }
+
+.yellow-2-cta-discover-p {
+  color: #604f35; }
 
 .love-back-link {
   height: 100%;
@@ -2638,8 +2687,13 @@ html, body {
   .self-worth-video {
     padding-bottom: 52.2% !important; }
   .cta-discover {
-    display: block;
-    margin: 0 auto; }
+    width: 21.5rem; }
+  .cta-discover-p {
+    font-size: 0.8rem;
+    top: 1.4rem; }
+  .cta-discover-h {
+    font-size: 1.25rem;
+    bottom: -1.7rem; }
   .cta-box {
     width: 21.5em;
     height: 6.75em;
@@ -2714,6 +2768,17 @@ html, body {
   .self-worth_container {
     max-width: 23em;
     margin: 0 auto; }
+  .cta-discover {
+    height: 6rem;
+    width: 18.15rem; }
+  .cta-discover-p {
+    font-size: 0.75rem;
+    top: 1.7rem;
+    left: 0rem; }
+  .cta-discover-h {
+    font-size: 1.2rem;
+    bottom: -1.5rem;
+    left: 0rem; }
   .blue-title {
     height: 6rem;
     width: 14rem;
