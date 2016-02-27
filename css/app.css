@@ -582,7 +582,8 @@ html, body {
   background-color: black; }
 
 .pg-2-chat-box-button {
-  background-color: #22e2ff; }
+  background-color: #22e2ff;
+  color: black; }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .pg-2-bacrnd-img {
@@ -834,22 +835,24 @@ html, body {
   width: 1em; }
 
 .pgs-2-5-cta {
-  height: 4rem;
+  height: 24.5rem;
   width: 36.4rem;
   position: absolute;
-  bottom: 0;
-  right: 0; }
+  bottom: -20.47rem;
+  right: 0;
+  transition: bottom 1s; }
 
 .pgs-2-5-cta-link {
   text-decoration: none; }
 
 .pgs-2-4-cta-btn {
-  height: 100%;
+  height: 4rem;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
   text-align: center;
-  opacity: 0.8; }
+  opacity: 0.8;
+  cursor: pointer; }
 
 .pgs-2-4-cta-btn-text {
   line-height: 350%;
@@ -865,14 +868,13 @@ html, body {
   top: 0.25rem; }
 
 .pgs-2-4-chat-box {
-  width: 26rem;
+  width: 36.4rem;
   height: 20.5rem;
   position: absolute;
-  bottom: -20.5rem;
+  bottom: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  background-color: #e6e6e6;
-  z-index: -10000; }
+  background-color: #e6e6e6; }
 
 .pgs-2-4-chat-box-title {
   font-size: 1.9rem;
@@ -892,14 +894,19 @@ html, body {
 
 .pgs-2-4-chat-box-text {
   height: 55%;
-  width: 100%;
+  width: 90%;
   text-align: justify;
   line-height: 160%;
   font-weight: 400;
-  font-size: 0.96rem; }
+  font-size: 1rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%); }
 
 .pgs-2-4-chat-box-input {
-  width: 100%;
+  width: 90%;
   height: 3rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -925,6 +932,14 @@ html, body {
   -webkit-transform: translate(0%, -50%);
       -ms-transform: translate(0%, -50%);
           transform: translate(0%, -50%); }
+
+.pgs-2-4-chat-box-border {
+  width: 100%;
+  height: 2.3rem;
+  background: white;
+  position: absolute;
+  right: 0;
+  bottom: -2.3rem; }
 
 .pgs-2-4-btm-rt-corner {
   width: 0;
@@ -1125,13 +1140,13 @@ html, body {
     top: 5rem;
     left: 2rem; }
   .pgs-2-5-cta {
-    height: 6%;
+    height: 19.8rem;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -17.7rem;
     right: 0; }
   .pgs-2-4-cta-btn {
-    height: 100%;
+    height: 2.05rem;
     width: 100%;
     font-size: 0.75rem; }
   .pgs-2-4-cta-btn-text {
@@ -1139,6 +1154,34 @@ html, body {
     left: -0.25rem; }
   .fa-chevron-circle-up {
     font-size: 1.5rem; }
+  .pgs-2-4-chat-box {
+    width: 100%;
+    height: 17.75rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0; }
+  .pgs-2-4-chat-box-title {
+    font-size: 1.35rem;
+    margin: 1.5rem 0 0.5rem 0; }
+  .pgs-2-4-chat-box-content {
+    height: 10rem;
+    width: 85%;
+    top: 1rem;
+    margin-bottom: 0; }
+  .pgs-2-4-chat-box-text {
+    width: 100%;
+    height: 55%;
+    line-height: 160%;
+    font-size: 0.76rem; }
+  .pgs-2-4-chat-box-input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.85rem;
+    padding-left: 0.75rem; }
+  .pgs-2-4-chat-box-button {
+    width: 9rem;
+    height: 2.5rem;
+    top: 0.5rem; }
   .pgs-2-4-btm-rt-corner {
     display: none; } }
 
@@ -1270,7 +1313,8 @@ html, body {
   background-color: #4c4539; }
 
 .pg-3-chat-box-button {
-  background-color: #f4b341; }
+  background-color: #f4b341;
+  color: #4c4539; }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .pg-3-bacrnd-img {
@@ -1475,7 +1519,8 @@ html, body {
   background-color: black; }
 
 .pg-4-chat-box-button {
-  background-color: #f16428; }
+  background-color: #f16428;
+  color: white; }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .pg-4-bacrnd-img {
@@ -2924,7 +2969,7 @@ html, body {
   margin: 0 auto;
   margin-top: 1.5%; }
 
-.vertical-line_first {
+.vertical-line-first {
   display: block;
   margin: 0 auto;
   margin-bottom: 1%; }
@@ -3062,7 +3107,7 @@ html, body {
     max-width: 80%;
     font-size: 1.3em;
     text-align: center; }
-  .vertical-line_first {
+  .vertical-line-first {
     max-width: .14em;
     margin-top: .5em; }
   .request-form {
@@ -3253,7 +3298,7 @@ html, body {
   margin: 0 auto;
   margin-top: 1.5%; }
 
-.vertical-line_first-bom {
+.vertical-line-first-bom {
   display: block;
   margin: 0 auto;
   margin-bottom: 1%; }
@@ -3412,7 +3457,7 @@ html, body {
     max-width: 80%;
     font-size: 1.3em;
     text-align: center; }
-  .vertical-line_first-bom {
+  .vertical-line-first-bom {
     max-width: .14em;
     margin-top: .5em; }
   .request-form-bom {
@@ -3493,7 +3538,7 @@ html, body {
     margin: 0 auto;
     display: block;
     max-width: 50%; }
-  .vertical-line_first-bom {
+  .vertical-line-first-bom {
     display: none; }
   .vertical-line_second-bom {
     display: none; }

@@ -1294,6 +1294,7 @@ html, body {
 
 .pg-2-chat-box-button {
   background-color: rgb(34, 226, 255);
+  color: black;
 }
 
 @media #{$medium-only} {
@@ -1606,24 +1607,31 @@ html, body {
 }
 
 .pgs-2-5-cta {
-  height: 4rem;
+  height: 24.5rem;
   width: 36.4rem;
   position: absolute;
-  bottom: 0;
-  right: 0;  
+  bottom: -20.47rem;
+  right: 0;
+  -webkit-transition: bottom 2s;
+  transition: bottom 1s;
 }
+
+//.pgs-2-5-cta:hover {
+//  bottom: 0;
+//}
 
 .pgs-2-5-cta-link {
   text-decoration: none;
 }
 
 .pgs-2-4-cta-btn {
-  height: 100%;
+  height: 4rem;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
   text-align: center;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .pgs-2-4-cta-btn-text {
@@ -1642,14 +1650,14 @@ html, body {
 }
 
 .pgs-2-4-chat-box {
-  width: 26rem;
+  width: 36.4rem;
   height: 20.5rem;
   position: absolute;
-  bottom: -20.5rem;
+  bottom: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(230, 230, 230);
-  z-index: -10000;
+//  z-index: -10000;
 }
 
 .pgs-2-4-chat-box-title {
@@ -1670,15 +1678,18 @@ html, body {
 
 .pgs-2-4-chat-box-text {
   height: 55%;
-  width: 100%;
+  width: 90%;
   text-align: justify;
   line-height: 160%;
   font-weight: 400;
-  font-size: 0.96rem;
+  font-size: 1rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%)
 }
 
 .pgs-2-4-chat-box-input {
-  width: 100%;
+  width: 90%;
   height: 3rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -1702,6 +1713,15 @@ html, body {
   position: relative;
   top: 50%;
   transform: translate(0%, -50%); 
+}
+
+.pgs-2-4-chat-box-border {
+  width: 100%;
+  height: 2.3rem;
+  background: white;
+  position: absolute;
+  right: 0;
+  bottom: -2.3rem;
 }
 
 .pgs-2-4-btm-rt-corner {
@@ -1958,15 +1978,15 @@ html, body {
   }
 
   .pgs-2-5-cta {
-    height: 6%;
+    height: 19.8rem;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -17.7rem;
     right: 0; 
   }
 
   .pgs-2-4-cta-btn {
-    height: 100%;
+    height: 2.05rem;
     width: 100%;
     font-size: 0.75rem;
   }
@@ -1978,6 +1998,64 @@ html, body {
   
   .fa-chevron-circle-up {
     font-size: 1.5rem;
+  }
+  
+  .pgs-2-4-chat-box {
+    width: 100%;
+    height: 17.75rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+//    text-align: center;
+//    font-family: 'Open Sans', sans-serif;
+//    background-color: rgb(230, 230, 230);
+//    z-index: -10000;
+  }
+
+  .pgs-2-4-chat-box-title {
+    font-size: 1.35rem;
+//    font-weight: 300;
+//    font-family: 'Open Sans', sans-serif;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+
+  .pgs-2-4-chat-box-content {
+    height: 10rem;
+    width: 85%;
+//    position: relative;
+    top: 1rem;
+//    left: 50%;
+//    transform: translate(-50%, 0%);
+    margin-bottom: 0;
+  }
+
+  .pgs-2-4-chat-box-text {
+    width: 100%;
+    height: 55%;
+//    text-align: justify;
+    line-height: 160%;
+//    font-weight: 400;
+    font-size: 0.76rem;
+  }
+
+  .pgs-2-4-chat-box-input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.85rem;
+//    font-family: 'Open Sans', sans-serif;
+//    font-weight: 600;
+//    border: none;
+    padding-left: 0.75rem;
+//    color: rgb(143, 143, 143);
+  }
+
+  .pgs-2-4-chat-box-button {
+    width: 9rem;
+    height: 2.5rem;
+//    position: relative;
+//    left: 50%;
+//    transform: translate(-50%, 0%);
+    top: 0.5rem;
   }
   
   .pgs-2-4-btm-rt-corner {
@@ -2141,6 +2219,7 @@ html, body {
 
 .pg-3-chat-box-button {
   background-color: rgb(244, 179, 65);
+  color: rgb(76, 69, 57);
 }
 
 @media #{$medium-only} {
@@ -2399,6 +2478,7 @@ html, body {
 
 .pg-4-chat-box-button {
   background-color: rgb(241, 100, 40);
+  color: white;
 }
 
 @media #{$medium-only} {
@@ -4229,7 +4309,7 @@ html, body {
   margin-top: 1.5%;
 }
 
-.vertical-line_first{
+.vertical-line-first{
   display: block;
   margin: 0 auto;
   margin-bottom: 1%;
@@ -4398,7 +4478,7 @@ html, body {
     font-size: 1.3em;
     text-align: center;
   }  
-  .vertical-line_first{
+  .vertical-line-first{
     max-width: .14em;
     margin-top: .5em;
   }
@@ -4611,7 +4691,7 @@ html, body {
   margin-top: 1.5%;
 }
 
-.vertical-line_first-bom{
+.vertical-line-first-bom{
   display: block;
   margin: 0 auto;
   margin-bottom: 1%;
@@ -4823,7 +4903,7 @@ html, body {
     font-size: 1.3em;
     text-align: center;
   }  
-  .vertical-line_first-bom{
+  .vertical-line-first-bom{
     max-width: .14em;
     margin-top: .5em;
   }
@@ -4927,7 +5007,7 @@ html, body {
       display: block;
       max-width: 50%;   
   }
-  .vertical-line_first-bom{
+  .vertical-line-first-bom{
      display: none;
   }
   
