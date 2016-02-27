@@ -840,21 +840,19 @@ html, body {
   position: absolute;
   bottom: -20.47rem;
   right: 0;
-  transition: bottom 2s; }
-
-.pgs-2-5-cta:hover {
-  bottom: 0; }
+  transition: bottom 1s; }
 
 .pgs-2-5-cta-link {
   text-decoration: none; }
 
 .pgs-2-4-cta-btn {
-  height: 100%;
+  height: 4rem;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
   text-align: center;
-  opacity: 0.8; }
+  opacity: 0.8;
+  cursor: pointer; }
 
 .pgs-2-4-cta-btn-text {
   line-height: 350%;
