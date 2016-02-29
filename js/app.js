@@ -52,6 +52,10 @@ $(document).ready(function() {
   document.getElementById("pop_up_tab_p4").addEventListener("click", function() {
     chat_box_pop_up(pop_up_p4, arrow_p4);
   }); 
+  
+//  document.getElementById("pop_up_tab_p5").addEventListener("click", function() {
+//    chat_box_pop_up(pop_up_p5);
+//  }); 
     
   
 });
