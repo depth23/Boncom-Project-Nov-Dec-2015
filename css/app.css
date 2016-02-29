@@ -1002,6 +1002,7 @@ html, body {
     position: absolute;
     left: 2rem; }
   .pgs-2-4-cta-btn {
+    height: 3rem;
     font-size: 0.9rem; }
   .pgs-2-4-cta-btn-text {
     line-height: 350%;
@@ -1010,11 +1011,10 @@ html, body {
     line-height: 50%; }
   .pgs-2-4-chat-box {
     position: absolute;
-    bottom: -20.5rem;
+    bottom: 0rem;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     background-color: #e6e6e6;
-    z-index: -10000;
     width: 26rem;
     height: 20.5rem; }
   .pgs-2-4-chat-box-title {
@@ -1103,10 +1103,10 @@ html, body {
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .pgs-2-5-cta {
-    height: 3em;
-    width: 26em;
+    height: 23.5rem;
+    width: 26rem;
     position: absolute;
-    bottom: 0;
+    bottom: -20.47rem;
     right: 0; } }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {

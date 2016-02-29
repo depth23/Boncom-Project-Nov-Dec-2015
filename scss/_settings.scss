@@ -1798,6 +1798,7 @@ html, body {
   }
   
   .pgs-2-4-cta-btn {
+    height: 3rem;
     font-size: 0.9rem;
   }
 
@@ -1812,11 +1813,11 @@ html, body {
   
   .pgs-2-4-chat-box {
     position: absolute;
-    bottom: -20.5rem;
+    bottom: 0rem;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(230, 230, 230);
-    z-index: -10000;
+//    z-index: -10000;
     width: 26rem;
     height: 20.5rem;
   }
@@ -1924,10 +1925,10 @@ html, body {
   }
   
   .pgs-2-5-cta {
-    height: 3em;
-    width: 26em;
+    height: 23.5rem;
+    width: 26rem;
     position: absolute;
-    bottom: 0;
+    bottom: -20.47rem;
     right: 0;  
   }
 }
